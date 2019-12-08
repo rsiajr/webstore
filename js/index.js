@@ -485,3 +485,23 @@ function plusCart () {
 buttonCart.addEventListener("click",plusCart);
 
 /*-------------------------------------------------------------------------------*/
+
+/*Weather API*/
+
+let dropDownList = document.getElementById(`city`);
+
+dropDownList.addEventListener("change",function(){
+    
+  const endPoint
+  =`http://api.weatherstack.com/current?access_key=f1bc0584c797f6554950b903feafad69&query=${dropDownList.value}`;
+
+  fetch(endPoint)
+  .then(function(res){
+      res.json()
+      .then(function(data){
+        let div = document.getElementById("container");
+        div.innerHTML=`The temperature in ${dropDownList.value} is ${data.current.temperature} degrees Celsius (${data.current.weather_descriptions} as of ${data.location.localtime}).`
+      })
+  })
+})
+
