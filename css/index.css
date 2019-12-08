@@ -25,11 +25,12 @@
     }
   
   .mainmenu {
-    background-color: lightblue;
+    background-color: dimgray;
+    color: white;
     padding: 1em;
     margin: 0;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 70px;
     left: 0;
     width: 10em;
     height: 100%;
@@ -72,7 +73,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;    
+    z-index: 999999999;    
     -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
     box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
@@ -123,7 +124,6 @@ a {
 }
 
 .marg-top{
-    position: relative;
     margin-top: 25%;
 }
 
@@ -240,7 +240,7 @@ a {
 
 .product-color {  
   display: block;
-  position: relative;
+  /* position: relative; */
 }
 
 .product-color span { 
