@@ -6,6 +6,12 @@ document.getElementById('drop').addEventListener('click', event => {
 
 /*-------------------------------------------------------------------------------*/
 
+/* Settings */
+
+const settings = {
+  productsRemaining: 3,
+  imagePath: 'img/'
+}
 
 /* Array of products */
 
@@ -19,9 +25,8 @@ const allProducts = [
       color: `black`,
       size: `6`,
       release: 2,
-      imagepath: `img/`,
       discount: 50,
-      quantity: 5,
+      quantity: 2,
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 39
@@ -33,9 +38,8 @@ const allProducts = [
       color: `black`,
       size: `7`,
       release: 1,
-      imagepath: `img/`,
       discount: 360,
-      quantity: 6,
+      quantity: 0,
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 249
@@ -47,9 +51,8 @@ const allProducts = [
       color: `blue`,
       size: `8`,
       release: 2,
-      imagepath: `img/`,
       discount: 70,
-      quantity: 3,
+      quantity: 5,
       category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 59
@@ -61,7 +64,6 @@ const allProducts = [
       color: `blue`,
       size: `9`,
       release: 1,
-      imagepath: `img/`,
       discount: 80,
       quantity: 2,
       category: 'running',
@@ -75,7 +77,6 @@ const allProducts = [
       color: `green`,
       size: `10`,
       release: 2,
-      imagepath: `img/`,
       discount: 90,
       quantity: 2,
       category: 'walking',
@@ -89,7 +90,6 @@ const allProducts = [
       color: `green`,
       size: `11`,
       release: 1,
-      imagepath: `img/`,
       discount: 300,
       quantity: 9,
       category: 'walking',
@@ -103,7 +103,6 @@ const allProducts = [
       color: `pink`,
       size: `6`,
       release: 2,
-      imagepath: `img/`,
       discount: 39,
       quantity: 7,
       category: 'walking',
@@ -117,7 +116,6 @@ const allProducts = [
       color: `pink`,
       size: `7`,
       release: 1,
-      imagepath: `img/`,
       discount: 310,
       quantity: 5,
       category: 'walking',
@@ -131,9 +129,8 @@ const allProducts = [
       color: `red`,
       size: `8`,
       release: 4,
-      imagepath: `img/`,
       discount: 110,
-      quantity: 6,
+      quantity: 0,
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 99
@@ -145,7 +142,6 @@ const allProducts = [
       color: `red`,
       size: `9`,
       release: 3,
-      imagepath: `img/`,
       discount: 40,
       quantity: 1,
       category: 'walking',
@@ -159,7 +155,6 @@ const allProducts = [
       color: `red`,
       size: `10`,
       release: 2,
-      imagepath: `img/`,
       discount: 50,
       quantity: 0,
       category: 'walking',
@@ -173,7 +168,6 @@ const allProducts = [
       color: `red`,
       size: `11`,
       release: 1,
-      imagepath: `img/`,
       discount: 50,
       quantity: 4,
       category: 'walking',
@@ -187,9 +181,8 @@ const allProducts = [
       color: `white`,
       size: `6`,
       release: 2,
-      imagepath: `img/`,
       discount: 60,
-      quantity: 5,
+      quantity: 0,
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 49
@@ -201,7 +194,6 @@ const allProducts = [
       color: `white`,
       size: `1`,
       release: 5,
-      imagepath: `img/`,
       discount: 60,
       quantity: 10,
       category: 'walking',
@@ -215,7 +207,6 @@ const allProducts = [
       color: `white`,
       size: `8`,
       release: 4,
-      imagepath: `img/`,
       discount: 70,
       quantity: 6,
       category: 'running',
@@ -229,7 +220,6 @@ const allProducts = [
       color: `white`,
       size: `9`,
       release: 3,
-      imagepath: `img/`,
       discount: 80,
       quantity: 2,
       category: 'walking',
@@ -243,7 +233,6 @@ const allProducts = [
       color: `white`,
       size: `10`,
       release: 4,
-      imagepath: `img/`,
       discount: 90,
       quantity: 2,
       category: 'walking',
@@ -257,7 +246,6 @@ const allProducts = [
       color: `white`,
       size: `11`,
       release: 1,
-      imagepath: `img/`,
       discount: 100,
       quantity: 3,
       category: 'running',
@@ -271,7 +259,6 @@ const allProducts = [
       color: `yellow`,
       size: `6`,
       release: 2,
-      imagepath: `img/`,
       discount: 110,
       quantity: 4,
       category: 'walking',
@@ -285,7 +272,6 @@ const allProducts = [
       color: `yellow`,
       size: `7`,
       release: 1,
-      imagepath: `img/`,
       discount: 110,
       quantity: 5,
       category: 'walking',
@@ -300,16 +286,27 @@ const allProducts = [
 
 const getProductsAsHtmlString = (product) => {
 
+  let stockStatus = ``;
+  let soldOutLabel = ``;
+  let purchase = `<button type="button" class="purchaseme">Buy</button>`
+  if (product.quantity <= 0) {
+    stockStatus = `<small class="callout">Sold out</small>`;
+    soldOutLabel = `soldout`;
+    purchase = ``;
+  } else if (product.quantity < settings.productsRemaining) {
+    stockStatus = `<small class="callout limitedstock">Limited stocks!</small>`;
+  }
+
   return `
-    <article class="product">
+    <article class="product ${soldOutLabel}">
       <header>
-        <a href="#"><img src="img/${product.img}" alt="${product.title}" class="imgclass"></a>
+        <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
       </header>
-      <h3 class="prodtitle">${product.title}</h3>
+      <h3 class="prodtitle">${product.title} ${stockStatus}</h3>
       <h4 class="quant">In stock: ${product.quantity}</h4>
       <p class="proddesc">${product.desc}</p>
       <form>
-          <button type="button" class="purchaseme">Buy</button>
+          ${purchase}
           <fieldset class="swatch">
               <legend>Select a colour</legend>
               <ul class="swatches">

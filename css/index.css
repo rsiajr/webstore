@@ -220,7 +220,7 @@ a {
 
 .quant{
     text-align: center;
-    color: teal;
+    color: dodgerblue;
     font-weight: bold;
 }
 
@@ -289,6 +289,26 @@ a {
     text-align: center;
     padding: 2% 3%;
 }
+
+
+/* Callouts depending on product stock */
+
+.callout {
+    display: inline-block;
+    font-size: 0.5em;
+    vertical-align: top;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    text-shadow: 0.125em 0.125em 0 rgba(0,0,0,0.4);
+    box-shadow: 0 0 1em rgba(0,0,0,0.4);
+  }
+  .limitedstock {
+    background-color: crimson;
+  }
+
+/* -------------------------------------------------------- */
 
 .swatch{
     display: block;
