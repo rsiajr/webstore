@@ -389,7 +389,7 @@ a {
     border-style: solid;
     border-color: whitesmoke;
     color: whitesmoke;
-    background-color: black; 
+    background-color: rgb(31, 58, 109); 
     margin:7% 0;
     padding: 2% 0;
     text-align: center;
@@ -398,12 +398,12 @@ a {
 .weatherstack{
     text-align: center;
     border-style: solid;
-    border-width: thick;
-    border: dodgerblue;
+    border-width: thin;
+    border-radius: 5px;
     padding: 2% 0;
-    background-color: whitesmoke;
+    background-color: steelblue;
     margin:1% 2% 5% 2%;
-    color: steelblue;
+    color: white;
 }
 
 .weathertext{
