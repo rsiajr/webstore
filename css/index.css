@@ -10,7 +10,8 @@
 
 /* Main menu popup */
 
-.addtocart{
+.addtocartimg{
+    display: none;
     border: none;
     margin-left: 45%;
     margin-top: 3%;
@@ -19,12 +20,14 @@
 }
 
 .carttext{
+    display: none;
     border: none;
     margin-left: 30%;
     margin-top: 3%;
 }
 
 .cartnum{
+    display: none;
     background-color: whitesmoke;
     color: dodgerblue;
     border-color: salmon;

@@ -336,7 +336,7 @@ const getProductsAsHtmlString = (product) => {
             </fieldset>
       </form>
       <form class="proddetails">
-          <data value="39"><sup>CDN$</sup><del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
+          <data value="39">CDN$<del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
           <button type="button" id="addtocart"><span class="addtocart">Add to Cart</span></button>
       </form>
     </article>`;
@@ -474,7 +474,7 @@ prodtitle.addEventListener('input', event => {
 let buttonCart = document.getElementById(`addtocart`);
 
 function plusCart () {
-  
+
   let a = document.getElementById('cartnum').innerHTML;
   let b = parseInt(a);
   let c = b + 1;
