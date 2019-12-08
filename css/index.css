@@ -395,6 +395,21 @@ a {
     text-align: center;
 }
 
+.weatherstack{
+    text-align: center;
+    border-style: solid;
+    border-width: thick;
+    border: dodgerblue;
+    padding: 2% 0;
+    background-color: whitesmoke;
+    margin:1% 2% 5% 2%;
+    color: steelblue;
+}
+
+.weathertext{
+    margin-top: 2%;
+}
+
 .footertext{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

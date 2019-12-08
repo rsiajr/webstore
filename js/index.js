@@ -500,7 +500,7 @@ dropDownList.addEventListener("change",function(){
       res.json()
       .then(function(data){
         let div = document.getElementById("container");
-        div.innerHTML=`The temperature in ${dropDownList.value} is ${data.current.temperature} degrees Celsius (${data.current.weather_descriptions} as of ${data.location.localtime}).`
+        div.innerHTML=`The temperature in ${dropDownList.value} is ${data.current.temperature}°C (${data.current.weather_descriptions} as of ${data.location.localtime})`
       })
   })
 })
