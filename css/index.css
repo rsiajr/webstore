@@ -1,0 +1,290 @@
+*, *::before, *::after { 
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.top{
+    display: block;
+    background-color: rgb(31, 58, 109);
+    text-align: left;
+    font-size: 1rem;
+    padding: 1% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;    
+    -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+}
+
+.menu-button{
+    margin-left: 3%;
+    margin-right: 30%;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.menu-button:hover, .menubotton:focus {
+    background-color: #2980B9;
+}
+
+.menulist:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.menulist:focus {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.signin{
+    height: auto;
+    width: auto;
+    margin-left: 24%;
+    max-height: 15%;
+    max-width: 8%;
+}
+
+.centerme{
+    text-align: center;
+    margin-top: 7%;
+}
+
+.boxfields{
+    border-radius: 2px;
+}
+
+.marg-top{
+    position: relative;
+    margin-top: 25%;
+}
+
+/* Dropdown menu section */
+
+.dropdownlist{
+    font-size: .9rem;
+}
+
+.somecontainer{
+    margin: 22% auto 0 auto;
+    background-color: whitesmoke;
+}
+
+.filtercss{
+    display: block;
+    border-width: medium;
+    border-style: solid;
+    border-color: cornflowerblue;
+    color: whitesmoke;
+    background-color: rgb(31, 58, 109); 
+    margin:7% 0;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.filtergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 5%;
+    text-align: center;
+}
+
+.filtertitlecolour{
+    background-color: teal;
+    color: white;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+.filtertitlesize{
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+.shoecolor{
+    text-align: center;
+}
+
+.shoesize{
+    text-align: center;
+}
+
+.searchresults{
+    display: block;
+    margin: 1% 0;
+    border-color: cornflowerblue;
+    color: whitesmoke;
+    background-color: rgb(31, 58, 109); 
+    margin:7% 0;
+    padding: 2% 0;
+    border-style: solid;
+    border-width: medium;
+    text-align: center;
+}
+
+.product{
+    border-style: solid;
+    border-top-color: whitesmoke;
+    border-bottom-color: whitesmoke;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+    border-width: .009rem;
+    padding: 2% 0;
+}
+
+.quant{
+    text-align: center;
+    color: teal;
+    font-weight: bold;
+}
+
+.prodtitle{
+    font-weight: bold;
+    padding: 2% 0;
+    font-size: 1.5rem;
+    color: rgb(31, 58, 109); 
+    text-align: center;
+}
+
+.proddesc{
+    font-weight: bold;
+    padding: 2% 0;
+    font-size: .8rem;
+    color: gray; 
+    text-align: center;
+}
+
+.swatches {
+  display: inline-block;
+}
+
+.swatches li {  
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-color {  
+  display: block;
+  position: relative;
+}
+
+.product-color span { 
+  display: block;
+  border: 2px solid transparent;
+  color: transparent;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+}
+
+.product-color input {  
+  position: absolute;
+  opacity: 0;
+  
+}
+
+.product-color input:checked + span {  
+  border: 2px solid #222; 
+}
+
+.product-color.red { 
+    background-color: red; 
+}
+.product-color.blue { 
+    background-color: steelblue; 
+}
+.product-color.white { 
+    background-color: white; 
+    border-style: solid;
+    border-color: gray;
+}
+
+.proddetails{
+    text-align: center;
+    padding: 2% 3%;
+}
+
+.swatch{
+    display: block;
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.purchaseme{
+    display: inline-block;
+    background-color: green;
+    padding: 3% 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
+
+.discount{
+    color: red;
+    text-align: left;
+}
+
+.newprice{
+    color: green;
+}
+
+.addtocart{
+    position: relative; 
+    top: -8px;
+}
+
+.nowshowing{
+    color: rgb(31, 58, 109);
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.footertext{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1rem;
+    padding: 2% 3%;
+    text-align: center;
+}
+
+.footericons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 0 12%;
+    font-size: 2rem;
+    background-color: rgb(31, 58, 109);
+    color: white;
+}
