@@ -8,6 +8,52 @@
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
+/* Main menu popup */
+
+.mainmenu-toggle {
+    display: block;
+    margin: 1em 0;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .navigation {
+    margin: 1em 0;
+  }
+    .navigation ul {
+      list-style: none;
+    }
+  
+  .mainmenu {
+    background-color: lightblue;
+    padding: 1em;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 100%;
+    transform: translateX(-10em);
+    transition: transform 0.3s;
+  }
+    .mainmenu li {
+      line-height: 1.5;
+    }
+      .mainmenu a {
+        color: var(--col-fg);
+        text-decoration: none;
+      }
+  .mainmenu.open { 
+    transform: translateX(0em);
+  }
+  
+  .page {
+    padding: 0 1em;
+  }
+
+/* --------------------------------------------------------------- */
+
+
 body{
     background-color: #ccc;
 }
@@ -50,7 +96,7 @@ a {
 }
 
 .menulist:hover {
-    background-color: darkblue;
+    background-color: cornflowerblue;
     color: white;
 }
 

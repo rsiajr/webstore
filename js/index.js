@@ -1,26 +1,8 @@
 /* Menu dropdown function */
 
-let buttonMenu = document.getElementById(`drop`);
-
-const showIt = () => {
-
-  let menu = document.getElementById(`dropdown`).innerHTML = `
-    <nav id="dropit" class="navclass">
-      <ul>
-        <li><a href="#" class="menulist">Home</a>
-        <li><a href="#" class="menulist">My Account</a></li>
-        <li><a href="#" class="menulist">My Transactions</a></li>
-        <li><a href="#" class="menulist">Search History</a></li>
-        <li><a href="#" class="menulist">My Reviews</a></li>
-        <li><a href="#" class="menulist">Shop by Category</a></li>
-        <li><a href="#" class="menulist">Today's Deals</a></li>
-        <li><a href="#" class="menulist">Contact Us</a></li>
-        <li><a href="#" class="menulist">About</a></li>
-      </ul>
-    </nav>`;
-}
-
-buttonMenu.addEventListener("click",showIt);
+document.getElementById('drop').addEventListener('click', event => {
+  document.getElementById('menu').classList.toggle('open');
+});
 
 /*-------------------------------------------------------------------------------*/
 
