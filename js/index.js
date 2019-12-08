@@ -303,7 +303,7 @@ const getProductsAsHtmlString = (product) => {
   return `
     <article class="product">
       <header>
-        <a href="#"><img src="img/${product.img}" alt="${product.title}"></a>
+        <a href="#"><img src="img/${product.img}" alt="${product.title}" class="imgclass"></a>
       </header>
       <h3 class="prodtitle">${product.title}</h3>
       <h4 class="quant">In stock: ${product.quantity}</h4>

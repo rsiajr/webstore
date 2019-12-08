@@ -207,6 +207,17 @@ a {
     padding: 2% 0;
 }
 
+.imgclass{
+    border-style: solid;
+    border-width: medium;
+    border-color: steelblue;
+    border-radius: 7px;
+    border-left-color: steelblue;
+    -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+}
+
 .quant{
     text-align: center;
     color: teal;
