@@ -9,11 +9,14 @@ document.getElementById('drop').addEventListener('click', event => {
 /* Settings */
 
 const settings = {
-  productsRemaining: 3,
+  productsRemaining: 3, //Any product with a quantity less than 3 will flag a "Limited stocks!" call out
   imagePath: 'img/'
 }
 
+/*-------------------------------------------------------------------------------*/
+
 /* Array of products */
+
 
 
 const allProducts = [
@@ -334,7 +337,7 @@ const getProductsAsHtmlString = (product) => {
       </form>
       <form class="proddetails">
           <data value="39"><sup>CDN$</sup><del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
-          <button type="button"><span class="addtocart">Add to Cart</span></button>
+          <button type="button" id="addtocart"><span class="addtocart">Add to Cart</span></button>
       </form>
     </article>`;
 }
@@ -466,4 +469,19 @@ prodtitle.addEventListener('input', event => {
 
 /*-------------------------------------------------------------------------------*/
 
-console.log(getProductsAsHtmlString.length)
+/* Add to cart function */
+
+let buttonCart = document.getElementById(`addtocart`);
+
+function plusCart () {
+  
+  let a = document.getElementById('cartnum').innerHTML;
+  let b = parseInt(a);
+  let c = b + 1;
+
+  return document.getElementById('cartnum').innerHTML = c;
+}
+
+buttonCart.addEventListener("click",plusCart);
+
+/*-------------------------------------------------------------------------------*/

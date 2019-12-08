@@ -10,6 +10,32 @@
 
 /* Main menu popup */
 
+.addtocart{
+    border: none;
+    margin-left: 45%;
+    margin-top: 3%;
+    height: 40px;
+    width: 40px;
+}
+
+.carttext{
+    border: none;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.cartnum{
+    background-color: whitesmoke;
+    color: dodgerblue;
+    border-color: salmon;
+    border-style: ridge;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 0 3%;
+    margin: 0 3%;
+}
+
 .mainmenu-toggle {
     display: block;
     margin: 1em 0;
