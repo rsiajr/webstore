@@ -383,6 +383,18 @@ a {
     margin-bottom: 3%;
 }
 
+.adcss{
+    display: block;
+    border-width: medium;
+    border-style: solid;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background-color: black; 
+    margin:7% 0;
+    padding: 2% 0;
+    text-align: center;
+}
+
 .footertext{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
