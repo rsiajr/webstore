@@ -229,7 +229,7 @@ const allProducts = [
       id: 17,
       img: `whiteshoes5.jpg`,
       title: `King White 5.0`,
-      desc: `It's like walking on the clouds - King White 5.0`,
+      desc: `It's like walking on fluffy clouds - King White 5.0`,
       color: `white`,
       size: `10`,
       release: 4,
@@ -302,13 +302,13 @@ const getProductsAsHtmlString = (product) => {
       <header>
         <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
       </header>
-      <h3 class="prodtitle">${product.title} ${stockStatus}</h3>
-      <h4 class="quant">In stock: ${product.quantity}</h4>
+      <h3 class="prodtitle">${product.title}</h3>
+      <h4 class="quant">In stock: ${product.quantity} ${stockStatus}</h4>
       <p class="proddesc">${product.desc}</p>
       <form>
           ${purchase}
           <fieldset class="swatch">
-              <legend>Select a colour</legend>
+              <legend>Color Variants:</legend>
               <ul class="swatches">
                 <li>
                   <label class="product-color red">
@@ -466,3 +466,5 @@ prodtitle.addEventListener('input', event => {
 })
 
 /*-------------------------------------------------------------------------------*/
+
+console.log(getProductsAsHtmlString.length)

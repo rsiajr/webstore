@@ -220,7 +220,7 @@ a {
 
 .quant{
     text-align: center;
-    color: dodgerblue;
+    color: rgb(31, 58, 109);
     font-weight: bold;
 }
 
@@ -228,7 +228,7 @@ a {
     font-weight: bold;
     padding: 2% 0;
     font-size: 1.5rem;
-    color: rgb(31, 58, 109); 
+    color: dodgerblue; 
     text-align: center;
 }
 
@@ -236,7 +236,7 @@ a {
     font-weight: bold;
     padding: 2% 0;
     font-size: .8rem;
-    color: gray; 
+    color: dodgerblue; 
     text-align: center;
 }
 
