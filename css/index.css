@@ -210,7 +210,7 @@ a {
 .imgclass{
     border-style: solid;
     border-width: medium;
-    border-color: steelblue;
+    border-color: rgb(31, 58, 109);
     border-radius: 7px;
     border-left-color: steelblue;
     -webkit-box-shadow: 0 10px 11px rgba(0, 0, 0, 0.12);
@@ -329,17 +329,23 @@ a {
 }
 
 .discount{
+    font-style: helvetica;
     color: red;
     text-align: left;
+    font-weight: bold;
 }
 
 .newprice{
+    font-style: helvetica;
     color: green;
+    font-weight: bold;
 }
 
 .addtocart{
     position: relative; 
-    top: -8px;
+    font-size: .8rem;
+    /* padding: 6%; */
+    top: -3px;
 }
 
 .nowshowing{

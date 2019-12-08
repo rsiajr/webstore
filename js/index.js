@@ -333,9 +333,8 @@ const getProductsAsHtmlString = (product) => {
             </fieldset>
       </form>
       <form class="proddetails">
-          <data value="39"><del class="discount">$${product.discount}</del> <ins class="newprice">$${product.price}</ins></data>
-          <button type="button"><span class="material-icons">add_shopping_cart</span> <span class="addtocart">Add to Cart</span></button>
-          <button type="button"><span class="material-icons">favorite</span></button>
+          <data value="39"><sup>CDN$</sup><del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
+          <button type="button"><span class="addtocart">Add to Cart</span></button>
       </form>
     </article>`;
 }
