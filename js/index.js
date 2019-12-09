@@ -43,7 +43,7 @@ const allProducts = [
       release: 1,
       discount: 360,
       quantity: 0,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 249
     },{  // 2
@@ -56,7 +56,7 @@ const allProducts = [
       release: 2,
       discount: 70,
       quantity: 5,
-      category: 'running',
+      category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 59
     },{  // 3
@@ -95,7 +95,7 @@ const allProducts = [
       release: 1,
       discount: 300,
       quantity: 9,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 189
     },{  // 6
@@ -121,7 +121,7 @@ const allProducts = [
       release: 1,
       discount: 310,
       quantity: 5,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 199
     },{  // 8
@@ -147,7 +147,7 @@ const allProducts = [
       release: 3,
       discount: 40,
       quantity: 1,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 29
     },{  // 10
@@ -173,7 +173,7 @@ const allProducts = [
       release: 1,
       discount: 50,
       quantity: 4,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 39
     },{  // 12
@@ -199,7 +199,7 @@ const allProducts = [
       release: 5,
       discount: 60,
       quantity: 10,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 49
     },{  // 14
@@ -277,7 +277,7 @@ const allProducts = [
       release: 1,
       discount: 110,
       quantity: 5,
-      category: 'walking',
+      category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 99
     }
