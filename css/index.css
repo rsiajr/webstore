@@ -497,4 +497,34 @@ a {
         margin-left: 10%;
     }
 
+    .prodinfo{
+        display: grid;
+        padding: 1% 0;
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.2rem;
+    }
+
+    .proddesc{
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .proddetails{
+        text-align: left;
+        margin-top: 7%;
+    }
+
+    .bottomprodinfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+
 }
