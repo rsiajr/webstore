@@ -431,15 +431,70 @@ a {
 /* Media queries start here */
 
 @media only screen and (min-width: 400px) {
+   
     .signin{
         height: auto;
         width: auto;
     }
-
+    
     .imgclass{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 70%;
     }
+
+    .mainmenu {
+        top: 16%;
+      }
+
+    .timad{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .kingad{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 500px) {
+    .menu-button{
+        height: 50px;
+        width: 40px;
+        text-align: center;
+    }
+
+    .mainmenu {
+        top: 19%;
+      }
+
+    .filtercss{
+        margin:7% 10%;
+    }
+
+    .adcss{
+        margin:7% 10%;
+    }
+
+    .searchresults{
+        margin:7% 10%;
+    }
+
+    .filtertitlecolour{
+        width: 200px;
+        margin-left: 10%;
+    }
+    
+    .filtertitlesize{
+        width: 200px;
+        margin-left: 10%;
+    }
+
 }

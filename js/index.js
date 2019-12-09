@@ -305,10 +305,12 @@ const getProductsAsHtmlString = (product) => {
       <header>
         <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
       </header>
-      <h3 class="prodtitle">${product.title}</h3>
-      <h4 class="quant">In stock: ${product.quantity} ${stockStatus}</h4>
-      <p class="proddesc">${product.desc}</p>
-      <form>
+      <div class="prodinfo">
+        <h3 class="prodtitle">${product.title}</h3>
+        <h4 class="quant">In stock: ${product.quantity} ${stockStatus}</h4>
+        <p class="proddesc">${product.desc}</p>
+      </div>
+      <form class="swatchcss">
           ${purchase}
           <fieldset class="swatch">
               <legend>Color Variants:</legend>
