@@ -39,6 +39,14 @@
     margin: 0 3%;
 }
 
+.subhead{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3% 15%;
+    margin: 3% 0;
+}
+
 .mainmenu-toggle {
     display: block;
     margin: 1em 0;
@@ -83,6 +91,11 @@
 
 /* --------------------------------------------------------------- */
 
+.logo{
+    max-width: 20%;
+    max-height: 40%;
+    border-radius: 75px;
+}
 
 body{
     background-color: #ccc;
@@ -159,7 +172,9 @@ a {
 /* Dropdown menu section */
 
 .dropdownlist{
-    font-size: .9rem;
+    margin-top: 5%;
+    font-size: 1rem;
+    color: gray;
 }
 
 .somecontainer{
@@ -171,7 +186,7 @@ a {
     display: block;
     border-width: medium;
     border-style: solid;
-    border-color: cornflowerblue;
+    border-color: whitesmoke;
     border-radius: 7px;
     color: whitesmoke;
     background-color: rgb(31, 58, 109); 
@@ -217,7 +232,7 @@ a {
 .searchresults{
     display: block;
     margin: 1% 0;
-    border-color: cornflowerblue;
+    border-color: whitesmoke;
     border-radius: 7px;
     color: whitesmoke;
     background-color: rgb(31, 58, 109); 
@@ -551,18 +566,14 @@ a {
 
     .subhead{
         background-color: tomato;
-        display: grid;
-        grid-template-columns: 1f 1fr 1fr;
-        grid-template-rows: 1fr;
     }
 
     .centerme{
-        text-align: center;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     
     .marg-top{
-        margin-top: 25%;
+        margin-top: 22%;
     }
 
 }
