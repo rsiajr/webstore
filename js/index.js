@@ -313,9 +313,8 @@ const getProductsAsHtmlString = (product) => {
       ${purchase}
       <div class="bottomprodinfo">
         <form class="swatchcss">
-
             <fieldset class="swatch">
-                <legend>Color Variants:</legend>
+              <legend>Color Variants:</legend>
                 <ul class="swatches">
                   <li>
                     <label class="product-color red">
@@ -336,7 +335,7 @@ const getProductsAsHtmlString = (product) => {
                     </label>
                   </li>
                 </ul>
-                <output id="selected"></output>
+              <output id="selected"></output>
               </fieldset>
         </form>
         <form class="proddetails">
