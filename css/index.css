@@ -518,7 +518,7 @@ a {
     }
 
     .prodinfo{
-        display: grid;
+        display: block;
         padding: 1% 0;
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -636,9 +636,29 @@ a {
       }
 
     .finalcut{
-        display: grid;
+        display: inline-block;
         grid-template-columns: 1fr;
     }
+
+    .proddesc{
+        margin: 0 20%;
+    }
+
+    .product{
+        display: inline-block;
+        border-style: solid;
+        border-top-color: whitesmoke;
+        border-bottom-color: whitesmoke;
+        border-width: .009rem;
+        padding: 2% 0;
+    }
+
+    /* .prodinfo{
+        display: block;
+        margin: 0 -10%;
+        padding: 1% 0;
+        width: 100%;
+    } */
 
 }
 
