@@ -1,144 +1,137 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>King eCom</title>
-  <meta name="description" content="Enjoy online shopping of your favorite clothing!">
-  <meta name="author" content="Reynaldo Sia Jr.">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="https://kit.fontawesome.com/2228eed549.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <section class="top">
-      <button type="button" class="menu-button" id="drop">
-        <span class="material-icons">menu</span>
-      </button>
-      <a href="index.html"><img src="img/company logo.jpg" alt="HTML Logo (replace this)" class="logo"></a>
-      <a href="#" title="Sign in or Create an account"><img src="img/log-in.png" alt="Button to sign in or create an account" class="signin"></a>
-    </section>
-    <nav aria-label="Primary" class="navigation" id="dropit" class="navclass">
-      <ul class="mainmenu" id="menu">
-        <li><a href="#" class="menulist">Home</a>
-        <li><a href="#" class="menulist">My Account</a></li>
-        <li><a href="#" class="menulist">My Transactions</a></li>
-        <li><a href="#" class="menulist">Search History</a></li>
-        <li><a href="#" class="menulist">My Reviews</a></li>
-        <li><a href="#" class="menulist">Shop by Category</a></li>
-        <li><a href="#" class="menulist">Today's Deals</a></li>
-        <li><a href="#" class="menulist">Contact Us</a></li>
-        <li><a href="#" class="menulist">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King eCom</title>
+    <meta name="description" content="Enjoy online shopping of your favorite clothing!">
+    <meta name="author" content="Reynaldo Sia Jr.">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/2228eed549.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <header>
-      <section class="marg-top">
-        <form class="centerme">
-          <div class="subhead">
-            <input type="search" name="find" id="find" placeholder="Search (by color)">
-            <select name="sort" id="sort" class="dropdownlist">
-              <option value="Sort by...">Sort by...</option>
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </div>
-        </form>
-        <section class="cartsection">
-            <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
-            <p class="carttext"><span id="cartnum" class="cartnum">0</span>items in cart</p>
-        </section>
-          <fieldset class="centerme"></fieldset>
-        </section>
-        <h2 class="filtercss">Filters</h2>
-        <div></div>
-          <fieldset>
-            <div class="filtergrid">
-              <legend class="filtertitlecolour">Color</legend>
-              <select id="shoecolor">
-                <option value="None"> </option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="green">Green</option>
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="red">Red</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset>
-            <div class="filtergrid">
-              <legend class="filtertitlesize">Category</legend>
-              <select id="shoecategory" class="shoesize">
-                <option value="None"> </option>
-                <option value="running">Running</option>
-                <option value="walking">Walking</option>
-              </select>
-            </div>
-          </fieldset>
+      <section class="top">
+        <button type="button" class="menu-button" id="drop">
+          <span class="material-icons">menu</span>
+        </button>
+        <a href="index.html"><img src="img/company logo.jpg" alt="HTML Logo (replace this)" class="logo"></a>
+        <a href="#" title="Sign in or Create an account"><img src="img/log-in.png" alt="Button to sign in or create an account" class="signin"></a>
+      </section>
+      <nav aria-label="Primary" class="navigation" id="dropit" class="navclass">
+        <ul class="mainmenu" id="menu">
+          <li><a href="#" class="menulist">Home</a>
+          <li><a href="#" class="menulist">My Account</a></li>
+          <li><a href="#" class="menulist">My Transactions</a></li>
+          <li><a href="#" class="menulist">Search History</a></li>
+          <li><a href="#" class="menulist">My Reviews</a></li>
+          <li><a href="#" class="menulist">Shop by Category</a></li>
+          <li><a href="#" class="menulist">Today's Deals</a></li>
+          <li><a href="#" class="menulist">Contact Us</a></li>
+          <li><a href="#" class="menulist">About</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <section>
-      <h2 class="searchresults">Search Results</h2>
-      <div id="products"></div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p class="nowshowing">&copy; King eCom, 2019.</p>
-    <div>
-      <h1 class="adcss"> This website and its designer was powered by: </h1>
-      <img src="img/timsad.webp" alt="Tim Horton's ad" class="timad">
-    </div>
-    <div>
-      <h1 class="adcss"> King eCom: The future of ecommerce! </h1>
-        <img src="img/myad.gif" alt="King eCom ad" class="kingad">
-    </div>
-    <h1 class="adcss"> Be weather-ready and wear the right shoes! Check the weather here:</h1>
-    <div class="weatherstack">
-        <form>
-          <select id="city">
-            <option value="">Please select a location
-            </option>
-            <option value="Calgary">Calgary</option>
-            <option value="Edmonton">Edmonton</option>
-            <option value="Etobicoke">Etobicoke</option>
-            <option value="Manitoba">Manitoba</option>
-            <option value="Montreal">Montreal</option>
-            <option value="Toronto">Toronto</option>
-            <option value="Vancouver">Vancouver</option>
-          </select>
-        </form>
-        <div class="weathertext" id="container"></div>
-        <h2 class="weathertext">Powered by www.weatherstack.com</h2>
-    </div>
-    <nav aria-label="Legal">
-      <ul class="footertext">
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Accessibility</a></li>
-      </ul>
-      
-    </nav>
-    <div>
-      <ul class="footericons">
-        <li><a href="#" title="Facebook"><i class="fab fa-facebook-f footpad"></i></a></li>
-        <li><a href="#" title="Instagram"><i class="fab fa-instagram footpad"></i></a></li>
-        <li><a href="#" title="Twitter"><i class="fab fa-twitter footpad"></i></a></li>
-        <li><a href="#" title="Pinterest"><i class="fab fa-pinterest footpad"></i></a></li>
-        <li><a href="#" title="Reddit"><i class="fab fa-reddit footpad"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-  <script src="js/index.js"></script>
-</body>
-
+    <main>
+      <header>
+        <section class="marg-top">
+          <form class="centerme">
+            <div class="subhead">
+              <input type="search" name="find" id="find" placeholder="Search (by color)">
+              <select name="sort" id="sort" class="dropdownlist">
+                <option value="Sort by...">Sort by...</option>
+                <option value="price-high">Price, highest to lowest</option>
+                <option value="price-low">Price, lowest to highest</option>
+                <option value="newest">Newest releases</option>
+              </select>
+            </div>
+          </form>
+          <section class="cartsection">
+              <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
+              <p class="carttext"><span id="cartnum" class="cartnum">0</span>items in cart</p>
+          </section>
+            <fieldset class="centerme"></fieldset>
+          </section>
+          <h2 class="filtercss">Filters</h2>
+          <div></div>
+            <fieldset>
+              <div class="filtergrid">
+                <legend class="filtertitlecolour">Color</legend>
+                <select id="shoecolor">
+                  <option value="None"> </option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="green">Green</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="red">Red</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="filtergrid">
+                <legend class="filtertitlesize">Category</legend>
+                <select id="shoecategory" class="shoesize">
+                  <option value="None"> </option>
+                  <option value="running">Running</option>
+                  <option value="walking">Walking</option>
+                </select>
+              </div>
+            </fieldset>
+      </header>
+      <section>
+        <h2 class="searchresults">Search Results</h2>
+        <div id="products"></div>
+      </section>
+    </main>
+    <footer>
+      <p class="nowshowing">&copy; King eCom, 2019.</p>
+      <div>
+        <h1 class="adcss"> This website and its designer was powered by: </h1>
+        <img src="img/timsad.webp" alt="Tim Horton's ad" class="timad">
+      </div>
+      <div>
+        <h1 class="adcss"> King eCom: The future of ecommerce! </h1>
+          <img src="img/myad.gif" alt="King eCom ad" class="kingad">
+      </div>
+      <h1 class="adcss"> Be weather-ready and wear the right shoes! Check the weather here:</h1>
+      <div class="weatherstack">
+          <form>
+            <select id="city">
+              <option value="">Please select a location
+              </option>
+              <option value="Calgary">Calgary</option>
+              <option value="Edmonton">Edmonton</option>
+              <option value="Etobicoke">Etobicoke</option>
+              <option value="Manitoba">Manitoba</option>
+              <option value="Montreal">Montreal</option>
+              <option value="Toronto">Toronto</option>
+              <option value="Vancouver">Vancouver</option>
+            </select>
+          </form>
+          <div class="weathertext" id="container"></div>
+          <h2 class="weathertext">Powered by www.weatherstack.com</h2>
+      </div>
+      <nav aria-label="Legal">
+        <ul class="footertext">
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="footericons">
+          <li><a href="#" title="Facebook"><i class="fab fa-facebook-f footpad"></i></a></li>
+          <li><a href="#" title="Instagram"><i class="fab fa-instagram footpad"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="fab fa-twitter footpad"></i></a></li>
+          <li><a href="#" title="Pinterest"><i class="fab fa-pinterest footpad"></i></a></li>
+          <li><a href="#" title="Reddit"><i class="fab fa-reddit footpad"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
