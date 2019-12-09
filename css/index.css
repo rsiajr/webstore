@@ -463,7 +463,7 @@ a {
     }
 
     .mainmenu {
-        top: 16%;
+        top: 10%;
       }
 
     .timad{
@@ -492,11 +492,11 @@ a {
     }
 
     .mainmenu {
-        top: 19%;
+        top: 110px;
       }
 
     .filtercss{
-        margin:7% 0%;
+        margin:5% 0%;
     }
 
     .adcss{
@@ -546,6 +546,12 @@ a {
 
 }
 
+@media only screen and (min-width: 600px) {
+
+    .mainmenu {
+        top: 130px;
+      }
+
 @media only screen and (min-width: 700px) {
 
     .top{
@@ -557,7 +563,7 @@ a {
     }
 
     .mainmenu {
-        top: 15.5%;
+        top: 155px;
       }
 
     .menu-button{
@@ -572,5 +578,32 @@ a {
     .marg-top{
         margin-top: 22%;
     }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+    .mainmenu {
+        top: 175px;
+      }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+
+    .mainmenu {
+        top: 195px;
+      }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .mainmenu {
+        top: 225px;
+      }
+
+}
 
 }
