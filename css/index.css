@@ -540,4 +540,24 @@ a {
         padding-left: .3%;
     }
 
+    .subhead{
+        background-color: tomato;
+        /* display: grid;
+        grid-template-columns: 1f 1fr 1fr;
+        grid-template-rows: 1fr; */
+    }
+
+    .centerme{
+        text-align: center;
+        margin-top: 7%;
+    }
+    
+    .boxfields{
+        border-radius: 2px;
+    }
+    
+    .marg-top{
+        margin-top: 25%;
+    }
+
 }

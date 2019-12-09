@@ -39,27 +39,28 @@
   </header>
   <main>
     <header>
-      <form class="centerme">
-        <div class="marg-top">
-          <label>Search (by color)
-            <input type="search" name="find" id="find">
-          </label>
-        </div>
-      </form>
-      <form>
-        <section class="cart section">
-          <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
-          <p class="carttext"><span id="cartnum" class="cartnum">0</span>items in cart</p>
-      </section>
-        <fieldset class="centerme">
-          <label for="sort" class="boxtext">Sort</label>
-          <select name="sort" id="sort" class="dropdownlist">
-            <option value="none"> </option>
-            <option value="price-high">Price, highest to lowest</option>
-            <option value="price-low">Price, lowest to highest</option>
-            <option value="newest">Newest releases</option>
-          </select>
-        </fieldset>
+      <section class="subhead">
+        <form class="centerme">
+          <div class="marg-top">
+            <label>Search (by color)
+              <input type="search" name="find" id="find">
+            </label>
+          </div>
+        </form>
+        <section class="cartsection">
+            <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
+            <p class="carttext"><span id="cartnum" class="cartnum">0</span>items in cart</p>
+        </section>
+          <fieldset class="centerme">
+            <label for="sort" class="boxtext">Sort</label>
+            <select name="sort" id="sort" class="dropdownlist">
+              <option value="none"> </option>
+              <option value="price-high">Price, highest to lowest</option>
+              <option value="price-low">Price, lowest to highest</option>
+              <option value="newest">Newest releases</option>
+            </select>
+          </fieldset>
+        </section>
         <h2 class="filtercss">Filters</h2>
         <div></div>
           <fieldset>
@@ -86,7 +87,6 @@
               </select>
             </div>
           </fieldset>
-      </form>
     </header>
 
     <section>
