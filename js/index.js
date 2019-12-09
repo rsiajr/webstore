@@ -301,18 +301,19 @@ const getProductsAsHtmlString = (product) => {
   }
 
   return `
+  <div class="finalcut">
     <article class="product ${soldOutLabel}">
       <div>
         <header>
           <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
         </header>
         <h3 class="prodtitle">${product.title}</h3>
-      </div>
-      <div>
         <div class="prodinfo">
           <h4 class="quant">In stock: ${product.quantity} ${stockStatus}</h4>
-          <p class="proddesc">${product.desc}</p>
         </div>
+        <p class="proddesc">${product.desc}</p>
+      </div>
+      <div>
         ${purchase}
         <div class="bottomprodinfo">
           <form class="swatchcss">
@@ -346,8 +347,9 @@ const getProductsAsHtmlString = (product) => {
               <button type="button" id="addtocart"><span class="addtocart">Add to Cart</span></button>
       </div>
         </form>
-      </div>
-    </article>`;
+    </div>
+  </article>
+</div>`;
 }
 
 const allP = allProducts.map(getProductsAsHtmlString).join(`\n`);

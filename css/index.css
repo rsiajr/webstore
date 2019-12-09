@@ -280,10 +280,9 @@ a {
 }
 
 .proddesc{
-    font-weight: bold;
     padding: 2% 0;
-    font-size: .8rem;
-    color: dodgerblue; 
+    font-size: 1rem;
+    color: steelblue; 
     text-align: center;
 }
 
@@ -577,6 +576,11 @@ a {
     
     .marg-top{
         margin-top: 22%;
+        font-size: 1.5rem;
+    }
+
+    .dropdownlist{
+        font-size: 1.5rem;
     }
 
     .adcss{
@@ -606,6 +610,23 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 
+    .prodinfo{
+        display: block;
+        padding: 1% 0;
+        width: 100%;
+    }
+
+    .bottomprodinfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1rem;
+    }
+
+    .purchaseme{
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+    
 }
 
 @media only screen and (min-width: 800px) {
@@ -613,6 +634,11 @@ a {
     .mainmenu {
         top: 175px;
       }
+
+    .finalcut{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 }
 
