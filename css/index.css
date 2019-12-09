@@ -172,6 +172,7 @@ a {
     border-width: medium;
     border-style: solid;
     border-color: cornflowerblue;
+    border-radius: 7px;
     color: whitesmoke;
     background-color: rgb(31, 58, 109); 
     margin:7% 0;
@@ -217,6 +218,7 @@ a {
     display: block;
     margin: 1% 0;
     border-color: cornflowerblue;
+    border-radius: 7px;
     color: whitesmoke;
     background-color: rgb(31, 58, 109); 
     margin:7% 0;
@@ -452,6 +454,7 @@ a {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 7px;
         width: 70%;
     }
 
@@ -459,6 +462,7 @@ a {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 7px;
         width: 70%;
     }
 
@@ -481,6 +485,7 @@ a {
 
     .adcss{
         margin:7% 10%;
+        border-radius: 7px;
     }
 
     .searchresults{
@@ -535,6 +540,10 @@ a {
         max-height: 50px;
     }
 
+    .mainmenu {
+        top: 15.5%;
+      }
+
     .menu-button{
         margin-left: 5%;
         padding-left: .3%;
@@ -542,18 +551,14 @@ a {
 
     .subhead{
         background-color: tomato;
-        /* display: grid;
+        display: grid;
         grid-template-columns: 1f 1fr 1fr;
-        grid-template-rows: 1fr; */
+        grid-template-rows: 1fr;
     }
 
     .centerme{
         text-align: center;
-        margin-top: 7%;
-    }
-    
-    .boxfields{
-        border-radius: 2px;
+        margin-top: 10px;
     }
     
     .marg-top{
