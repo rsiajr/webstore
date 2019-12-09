@@ -588,33 +588,22 @@ a {
         margin: 0 20%;
     }
 
+    .imgclass{
+        max-height: 60%;
+        max-width: 50%;
+    }
+
     .searchresults{
         font-size: 2rem;
-        display: block;
-        margin: 1% 0;
-        border-color: whitesmoke;
-        border-radius: 7px;
-        color: whitesmoke;
-        background-color: rgb(31, 58, 109); 
-        margin: 7% 0;
-        padding: 2% 0;
-        border-style: solid;
-        border-width: medium;
-        text-align: center;
     }
 
     .filtercss{
         font-size: 2rem;
-        display: block;
-        border-width: medium;
-        border-style: solid;
-        border-color: whitesmoke;
-        border-radius: 7px;
-        color: whitesmoke;
-        background-color: rgb(31, 58, 109); 
-        margin:7% 0;
-        padding: 2% 0;
-        text-align: center;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }

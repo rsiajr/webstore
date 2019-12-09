@@ -302,45 +302,49 @@ const getProductsAsHtmlString = (product) => {
 
   return `
     <article class="product ${soldOutLabel}">
-      <header>
-        <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
-      </header>
-      <h3 class="prodtitle">${product.title}</h3>
-      <div class="prodinfo">
-        <h4 class="quant">In stock: ${product.quantity} ${stockStatus}</h4>
-        <p class="proddesc">${product.desc}</p>
+      <div>
+        <header>
+          <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
+        </header>
+        <h3 class="prodtitle">${product.title}</h3>
       </div>
-      ${purchase}
-      <div class="bottomprodinfo">
-        <form class="swatchcss">
-            <fieldset class="swatch">
-              <legend>Color Variants:</legend>
-                <ul class="swatches">
-                  <li>
-                    <label class="product-color red">
-                      <input type="radio" name="colour" value="r" checked> 
-                      <span>${product.swatch.colorway1}</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="product-color white">
-                      <input type="radio" name="colour" value="w">
-                      <span>${product.swatch.colorway2}</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="product-color blue">
-                      <input type="radio" name="colour" value="b"> 
-                      <span>${product.swatch.colorway3}</span>
-                    </label>
-                  </li>
-                </ul>
-              <output id="selected"></output>
-              </fieldset>
-        </form>
-        <form class="proddetails">
-            <data value="39">CDN$<del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
-            <button type="button" id="addtocart"><span class="addtocart">Add to Cart</span></button>
+      <div>
+        <div class="prodinfo">
+          <h4 class="quant">In stock: ${product.quantity} ${stockStatus}</h4>
+          <p class="proddesc">${product.desc}</p>
+        </div>
+        ${purchase}
+        <div class="bottomprodinfo">
+          <form class="swatchcss">
+              <fieldset class="swatch">
+                <legend>Color Variants:</legend>
+                  <ul class="swatches">
+                    <li>
+                      <label class="product-color red">
+                        <input type="radio" name="colour" value="r" checked> 
+                        <span>${product.swatch.colorway1}</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-color white">
+                        <input type="radio" name="colour" value="w">
+                        <span>${product.swatch.colorway2}</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-color blue">
+                        <input type="radio" name="colour" value="b"> 
+                        <span>${product.swatch.colorway3}</span>
+                      </label>
+                    </li>
+                  </ul>
+                <output id="selected"></output>
+                </fieldset>
+          </form>
+          <form class="proddetails">
+              <data value="39">CDN$<del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
+              <button type="button" id="addtocart"><span class="addtocart">Add to Cart</span></button>
+      </div>
         </form>
       </div>
     </article>`;
