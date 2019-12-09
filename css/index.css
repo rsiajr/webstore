@@ -427,3 +427,19 @@ a {
     background-color: rgb(31, 58, 109);
     color: white;
 }
+
+/* Media queries start here */
+
+@media only screen and (min-width: 400px) {
+    .signin{
+        height: auto;
+        width: auto;
+    }
+
+    .imgclass{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+}
