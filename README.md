@@ -16,3 +16,24 @@ www.giphy.com
 www.weatherstack.com
 
 
+Media-queries
+
+-Article = product
+-Div = prodinfo
+	-Image = imgclass
+	-Prodtitle
+	-Proddesc 
+-Swatch form:
+	-swatchcss
+-Price etc.
+	-proddetails
+	-discount
+	-newprice
+
+
+Bombard with comments
+	Function
+	Return
+	Description
+
+7 XDs
