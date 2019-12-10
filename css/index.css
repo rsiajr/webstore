@@ -8,7 +8,7 @@
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-/* Main menu popup */
+/* CSS for the header Sign In, Add to Cart, Popup Menu, and Logo*/
 
 .addtocartimg{
     display: none;
@@ -40,16 +40,16 @@
     margin: 1em 0;
     cursor: pointer;
     margin-left: auto;
-  }
-  
-  .navigation {
+}
+
+.navigation {
     margin: 1em 0;
-  }
+}
     .navigation ul {
-      list-style: none;
+    list-style: none;
     }
-  
-  .mainmenu {
+
+.mainmenu {
     background-color: steelblue;
     color: black;
     padding: 1em;
@@ -61,37 +61,26 @@
     height: 100%;
     transform: translateX(-10em);
     transition: transform 0.3s;
-  }
+}
     .mainmenu li {
-      line-height: 1.5;
+    line-height: 1.5;
     }
-      .mainmenu a {
+    .mainmenu a {
         color: var(--col-fg);
         text-decoration: none;
-      }
-  .mainmenu.open { 
+    }
+.mainmenu.open { 
     transform: translateX(0em);
-  }
-  
-  .page {
-    padding: 0 1em;
-  }
+}
 
-/* --------------------------------------------------------------- */
+.page {
+    padding: 0 1em;
+}
 
 .logo{
     max-width: 20%;
     max-height: 40%;
     border-radius: 75px;
-}
-
-body{
-    background-color: lightgray;
-}
-
-a {
-    text-decoration: none;
-    color: cornflowerblue;
 }
 
 .top{
@@ -144,6 +133,31 @@ a {
     max-width: 8%;
 }
 
+.dropdownlist{
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem;
+    color: gray;
+}
+
+.somecontainer{
+    margin: 22% auto 0 auto;
+    background-color: whitesmoke;
+
+/* CSS for Body and Hyperlink*/
+
+body{
+    background-color: snow;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+/* General CSS to adjust text and textboxes */
+
 .centerme{
     text-align: center;
     margin-top: 1%;
@@ -176,20 +190,7 @@ a {
     margin-top: 27%;
 }
 
-/* Dropdown menu section */
-
-.dropdownlist{
-    margin-top: 3%;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 1rem;
-    color: gray;
-}
-
-.somecontainer{
-    margin: 22% auto 0 auto;
-    background-color: whitesmoke;
-}
+/* Filter area CSS */
 
 .filtercss{
     display: block;
@@ -230,6 +231,8 @@ a {
     border-color: gray;
     text-align: center;
 }
+
+/* Product area CSS */
 
 .shoecolor{
     text-align: center;
@@ -298,36 +301,35 @@ a {
 }
 
 .swatches {
-  display: inline-block;
+display: inline-block;
 }
 
 .swatches li {  
-  display: inline-block;
-  vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
 
 .product-color {  
-  display: block;
-  /* position: relative; */
+display: block;
 }
 
 .product-color span { 
-  display: block;
-  border: 2px solid transparent;
-  color: transparent;
-  height: 2em;
-  width: 2em;
-  cursor: pointer;
+display: block;
+border: 2px solid transparent;
+color: transparent;
+height: 2em;
+width: 2em;
+cursor: pointer;
 }
 
 .product-color input {  
-  position: absolute;
-  opacity: 0;
-  
+position: absolute;
+opacity: 0;
+
 }
 
 .product-color input:checked + span {  
-  border: 2px solid #222; 
+border: 2px solid #222; 
 }
 
 .product-color.red { 
@@ -347,8 +349,7 @@ a {
     padding: 2% 3%;
 }
 
-
-/* Callouts depending on product stock */
+/* Callout CSS depending on product stock */
 
 .callout {
     display: inline-block;
@@ -360,12 +361,12 @@ a {
     color: white;
     text-shadow: 0.125em 0.125em 0 rgba(0,0,0,0.4);
     box-shadow: 0 0 1em rgba(0,0,0,0.4);
-  }
-  .limitedstock {
+}
+.limitedstock {
     background-color: crimson;
-  }
+}
 
-/* -------------------------------------------------------- */
+/* JS getProductAsHtmlString CSS*/
 
 .swatch{
     display: block;
@@ -424,6 +425,8 @@ a {
     margin-bottom: 3%;
 }
 
+/* Ads CSS */
+
 .adcss{
     display: block;
     border-width: medium;
@@ -451,6 +454,15 @@ a {
     margin-top: 2%;
 }
 
+.backad{
+    background-image: url('/img/weather.webp');
+    background-size: cover;
+    opacity: .8;
+    background-position: bottom -150px right 1px;
+}
+
+/* Footer CSS */
+
 .footertext{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -469,17 +481,11 @@ a {
     color: white;
 }
 
-.backad{
-    background-image: url('/img/weather.webp');
-    background-size: cover;
-    opacity: .8;
-    background-position: bottom -150px right 1px;
-}
 
 /* Media queries start here */
 
 @media only screen and (min-width: 400px) {
-   
+
     .signin{
         height: auto;
         width: auto;
@@ -494,7 +500,7 @@ a {
 
     .mainmenu {
         top: 10%;
-      }
+    }
 
     .timad{
         display: block;
@@ -526,7 +532,7 @@ a {
 
     .mainmenu {
         top: 110px;
-      }
+    }
 
     .filtercss{
         margin:5% 0%;
@@ -586,7 +592,7 @@ a {
 
     .mainmenu {
         top: 130px;
-      }   
+    }   
 
     .backad{
         background-position: bottom -230px right 1px;
@@ -597,7 +603,7 @@ a {
     .top{
         width: 100%;
     }
- 
+
     .logo{
         max-width: 20%;
         max-height: 90px;
@@ -611,7 +617,7 @@ a {
 
     .mainmenu {
         top: 100px;
-      }
+    }
 
     .menu-button{
         margin-left: 5%;
@@ -680,7 +686,7 @@ a {
         margin-bottom: 5%;
     }
     
-    /* Product zoom */
+/* Product zoom */
 
     .zoom {
         background-color: black;
@@ -898,7 +904,7 @@ a {
     }
 
     .marg-top{
-        margin-top: 9%;
+        margin-top: 12%;
     }
 
     .filterdropdown{
@@ -939,12 +945,12 @@ a {
     }
 
     .addtocartimg{
-        margin-left: 33%;
+        margin-left: 30%;
     }
 
     .mainmenu {
-        top: 130px;
-      }   
+        top: 220px;
+    }   
 
     .backad{
         background-position: bottom -900px right 1px;
