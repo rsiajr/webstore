@@ -798,11 +798,24 @@ a {
 
     .weatherstack{
         font-size: 2rem;
+        background-color: teal;
     }
 
     .footertext{
         font-size: 2rem;
     }
+
+    .footerfinal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(31, 58, 109);
+        padding: 2% 1%;
+    }
+
+    .footertext{
+        font-size: 1.5rem;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -827,4 +840,48 @@ a {
         margin-left: 9%;
     }
 
-}}
+    .adgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+    }
+
+    .adcss{
+        margin: 2%;
+    }
+
+    .timad{
+        width: 37%;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .mainmenu {
+        top: 123px;
+    }   
+
+    .timadthree{
+        background-color: blue;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .logo{
+        margin-left: 13%;
+    }
+
+    .addtocartimg{
+        margin-left: 33%;
+    }
+
+    .mainmenu {
+        top: 130px;
+      }   
+
+}
+
+}
