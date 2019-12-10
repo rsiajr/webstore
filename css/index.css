@@ -179,7 +179,9 @@ a {
 /* Dropdown menu section */
 
 .dropdownlist{
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 1rem;
     color: gray;
 }
@@ -519,7 +521,7 @@ a {
     .menu-button{
         height: 50px;
         width: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     .mainmenu {
@@ -928,6 +930,7 @@ a {
 @media only screen and (min-width: 1920px) {
 
     .logo{
+        max-height: 180px;
         margin-left: 13%;
     }
 
@@ -941,7 +944,6 @@ a {
 
     .backad{
         background-position: bottom -900px right 1px;
-        opacity: .3;
     }
 
     .weathertext{
@@ -951,6 +953,7 @@ a {
     .adcss{
         font-size: 2rem;
     }
+
 }
 
 }

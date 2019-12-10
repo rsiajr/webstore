@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King eCom</title>
+    <!-- Added the small icon on the bworser tab window below -->
     <link rel="icon" type="image/png" href="img/company logo.jpg">
     <meta name="description" content="Enjoy online shopping of your favorite clothing!">
     <meta name="author" content="Reynaldo Sia Jr.">
@@ -11,19 +12,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/2228eed549.js" crossorigin="anonymous"></script>
+    <!-- Used Roboto font from Google font website -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <section class="top">
+        <!-- Menu botton on header portion -->
         <button type="button" class="menu-button" id="drop">
-          <span class="material-icons">menu</span>
+        <span class="material-icons">menu</span>
         </button>
         <a href="index.html"><img src="img/company logo.jpg" alt="HTML Logo (replace this)" class="logo"></a>
         <a href="#" title="Sign in or Create an account"><img src="img/log-in.png" alt="Button to sign in or create an account" class="signin"></a>
+        <!-- Once a larger viewport is reached via Media Query, the sign in button is replaced by the cart logo -->
         <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
+        <!-- This cartnum is linked to JS and will keep adding "1" if a user clicks on the "Add to cart" button for each product. It's broken though because only the first product's button works and the succeeding ones don't, which is weird because all products use the same ID. Don't know how to fix it so I left it as is. -->
         <p class="carttext"><span id="cartnum" class="cartnum">0</span> items in cart</p>
       </section>
+      <!-- This is the popup menu list -->
       <nav aria-label="Primary" class="navigation" id="dropit" class="navclass">
         <ul class="mainmenu" id="menu">
           <li><a href="#" class="menulist">Home</a>
@@ -40,6 +46,7 @@
     </header>
     <main>
       <header>
+        <!-- This the sort feature area -->
         <section class="marg-top">
           <form class="centerme">
             <div class="subhead">
@@ -52,41 +59,43 @@
               </select>
             </div>
           </form>
-            <fieldset class="centerme"></fieldset>
-          </section>
-          <h2 class="filtercss">Filters</h2>
-          <div></div>
-            <fieldset>
-              <div class="filtergrid">
-                <legend class="filtertitlecolour">Color</legend>
-                <select id="shoecolor" class="filterdropdown">
-                  <option value="None"> </option>
-                  <option value="black">Black</option>
-                  <option value="white">White</option>
-                  <option value="green">Green</option>
-                  <option value="red">Red</option>
-                  <option value="blue">Blue</option>
-                  <option value="red">Red</option>
-                </select>
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="filtergrid">
-                <legend class="filtertitlesize">Category</legend>
-                <select id="shoecategory" class="shoesize filterdropdown">
-                  <option value="None"> </option>
-                  <option value="running">Running</option>
-                  <option value="walking">Walking</option>
-                </select>
-              </div>
-            </fieldset>
+          <fieldset class="centerme"></fieldset>
+        </section>
+        <!-- These are the filter features area -->
+        <h2 class="filtercss">Filters</h2>
+        <fieldset>
+          <div class="filtergrid">
+            <legend class="filtertitlecolour">Color</legend>
+              <select id="shoecolor" class="filterdropdown">
+                <option value="None"> </option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+              </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="filtergrid">
+            <legend class="filtertitlesize">Category</legend>
+              <select id="shoecategory" class="shoesize filterdropdown">
+                <option value="None"> </option>
+                <option value="running">Running</option>
+                <option value="walking">Walking</option>
+              </select>
+          </div>
+        </fieldset>
       </header>
       <section>
         <h2 class="searchresults">Search Results</h2>
+        <!-- This area is where the products will get populated from JS -->
         <div id="products" class="mainproduct"></div>
       </section>
     </main>
     <footer>
+      <!-- I added gif ads (one from Tim Hortons, which I got from the internet, and the other is a gif that I created from Milo's class) -->
       <article class="adgrid">
         <div class="timadthree">
           <h1 class="adcss"> This website and its designer were powered by: </h1>
@@ -94,10 +103,11 @@
         </div>
         <div class="timadfour">
           <h1 class="adcss"> King eCom: The future of ecommerce! </h1>
-            <img src="img/myad.gif" alt="King eCom ad" class="kingad">
+          <img src="img/myad.gif" alt="King eCom ad" class="kingad">
         </div>
       </article>
       <article>
+        <!-- I added a weather api that we learned from Kadeem's class. I linked it's value by stating that the user can decide which type of shoes to wear for the day depending on the weather of the place he's going to. -->
         <h1 class="adcss"> Be weather-ready and wear the right shoes! Check the weather here:</h1>
         <div class="weatherstack backad">
           <form>
