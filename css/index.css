@@ -880,6 +880,25 @@ a {
         background-position: bottom -440px right 1px;
     }
 
+    .timadthree{
+        background-color: #617073;
+        padding-bottom: 2%;
+    }
+
+    .timadfour{
+        background-color: #829191;
+        padding-bottom: 2%;
+    }
+
+    .adcss{
+        background-color: cornflowerblue;
+        border-color: lightgray;
+    }
+
+    .marg-top{
+        margin-top: 9%;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
@@ -888,15 +907,22 @@ a {
         top: 123px;
     }   
 
-    .timadthree{
-        background-color: whitesmoke;
-        padding-bottom: 2%;
-    }
-
     .backad{
         background-position: bottom -570px right 1px;
     }
 
+    .nowshowing{
+        font-size: 2rem;
+    }
+
+    .addtocartimg{
+        margin-right: 12px;
+        margin-top: -24px;
+    }
+    
+    .filterdropdown{
+        margin-left: -35%;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -914,9 +940,17 @@ a {
       }   
 
     .backad{
-        background-position: bottom -770px right 1px;
+        background-position: bottom -900px right 1px;
+        opacity: .3;
     }
 
+    .weathertext{
+        font-size: 3rem;
+    }
+
+    .adcss{
+        font-size: 2rem;
+    }
 }
 
 }

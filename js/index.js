@@ -4,16 +4,12 @@ document.getElementById('drop').addEventListener('click', event => {
   document.getElementById('menu').classList.toggle('open');
 });
 
-
-
 /* Settings */
 
 const settings = {
   productsRemaining: 3, //Any product with a quantity less than 3 will flag a "Limited stocks!" call out
   imagePath: 'img/'
 }
-
-
 
 /* Array of products */
 
