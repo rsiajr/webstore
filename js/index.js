@@ -1,17 +1,17 @@
-/* Menu dropdown function */
+/* Description: For the popup menu */ 
 
 document.getElementById('drop').addEventListener('click', event => {
   document.getElementById('menu').classList.toggle('open');
 });
 
-/* Settings */
+/*  Description: Reference for the product label (sold out, limited stocks) and the image path */
 
 const settings = {
   productsRemaining: 3, //Any product with a quantity less than 3 will flag a "Limited stocks!" call out
   imagePath: 'img/'
 }
 
-/* Array of products */
+/* This is my array for all 20 products */
 
 const allProducts = [
     { // 0
@@ -277,8 +277,11 @@ const allProducts = [
     }
 ];
 
-
-/* Array to HTML */
+/* 
+Function: getProductsAsHtmlString
+Return: String
+Description: This generates my products list using the product allProducts array above
+*/
 
 const getProductsAsHtmlString = (product) => {
 
@@ -333,13 +336,13 @@ const getProductsAsHtmlString = (product) => {
                     </li>
                   </ul>
                 <output id="selected"></output>
-                </fieldset>
+              </fieldset>
           </form>
           <form class="proddetails">
               <data value="39">CDN$<del class="discount">${product.discount}</del> <ins class="newprice"> ${product.price}</ins></data>
               <button type="button" id="addtocart"><span class="addtocart">Add to Cart</span></button>
-      </div>
-        </form>
+          </form>
+        </div>
     </div>
   </article>
 </div>`;
@@ -350,8 +353,11 @@ const allP = allProducts.map(getProductsAsHtmlString).join(`\n`);
 document.getElementById(`products`).innerHTML = allP;
 
 
-
-/* Sort products */
+/* 
+Function: sortHighest
+Return: Sorted array
+Description: This sorts the allProducts array and returns the array sorted from highest priced to lowest
+*/
 
 let sort = document.getElementById(`sort`);
 
@@ -367,6 +373,12 @@ const sortHighest = () => {
 
 }
 
+/* 
+Function: sortLowest
+Return: Sorted array
+Description: This sorts the allProducts array and returns the array sorted from lowest priced to highest
+*/
+
 const sortLowest = () => {
 
   const sortByPrice = allProducts.sort(function (a, b) {
@@ -379,6 +391,12 @@ const sortLowest = () => {
 
 }
 
+/* 
+Function: sortNewest
+Return: Sorted array
+Description: This sorts the allProducts array and returns the array sorted from lowest "Release" number to highest
+*/
+
 const sortNewest = () => {
 
   const sortByPrice = allProducts.sort(function (a, b) {
@@ -390,6 +408,12 @@ const sortNewest = () => {
   document.getElementById(`products`).innerHTML = sortAllP;
 
 }
+
+/* 
+Function: sortProducts
+Return: Sorted array
+Description: This function calls on the other sorting functions above
+*/
 
 const sortProducts = () => {
 
@@ -412,8 +436,11 @@ const sortProducts = () => {
 sort.addEventListener("input",sortProducts);
 
 
-
-/*Filter function*/
+/* 
+Function: colorCatFilter
+Return: Filtered array
+Description: This function filters the array by color
+*/
 
 let FilterC = document.getElementById(`shoecolor`);
 let FilterS = document.getElementById(`shoecategory`);
@@ -439,6 +466,12 @@ const colorCatFilter = (c) => {
 
 }
 
+/* 
+Function: prodAllFilter
+Return: Filtered array
+Description: This function filters the array by category (e.g. Running or Walking)
+*/
+
 const prodAllFilter= () => {
 
   const filterAllP = allProducts.filter(colorCatFilter).map(getProductsAsHtmlString).join(`\n`);
@@ -449,15 +482,23 @@ const prodAllFilter= () => {
 FilterC.addEventListener("input",prodAllFilter);
 FilterS.addEventListener("input",prodAllFilter);
 
-
-
-/* Search function */
+/* 
+Function: showProductInHtml
+Return: Filtered array when the user searches the product list by color
+Description: Renders the searched values into an array and throws it into the HTML
+*/
 
 const showProductInHtml = (arr) => {
 
   document.getElementById('products').innerHTML = arr.map(getProductsAsHtmlString).join('\n');
 
 }
+
+/* 
+Function: prodtitle
+Return: Event listener when the user types something in the Search Field
+Description: Renderst the filtered by search array into HTML (Second part of showProductInHtml above)
+*/
 
 const prodtitle = document.getElementById('find');
 
@@ -470,9 +511,11 @@ prodtitle.addEventListener('input', event => {
 
 })
 
-
-
-/* Add to cart function */
+/* 
+Function: plusCart
+Return: Adds 1 to the Add to Cart in the upper-right hand portion of the screen
+Description: Linked to the "Add to Cart" button on each product tile
+*/
 
 let buttonCart = document.getElementById(`addtocart`);
 
@@ -487,9 +530,11 @@ function plusCart () {
 
 buttonCart.addEventListener("click",plusCart);
 
-
-
-/*Weather API*/
+/* 
+Function: dropDownList
+Return: API result of www.weatherstack.com search value
+Description: I added a weather api that we learned from Kadeem's class. I linked it's value by stating that the user can decide which type of shoes to wear for the day depending on the weather of the place he's going to.
+*/
 
 let dropDownList = document.getElementById(`city`);
 
