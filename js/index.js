@@ -282,7 +282,6 @@ const allProducts = [
 ];
 
 
-
 /* Array to HTML */
 
 const getProductsAsHtmlString = (product) => {

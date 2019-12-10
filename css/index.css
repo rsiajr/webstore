@@ -104,9 +104,9 @@ a {
     top: 0;
     left: 0;
     z-index: 10;    
-    -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
-    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 0 7px 8px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 0 7px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 7px 8px rgba(0, 0, 0, 0.12);
 }
 
 .menu-button{
@@ -703,14 +703,12 @@ a {
     .product{
         display: inline-block;
         background-color: lightgray;
-        border-style: solid;
-        border-top-color: gray;
-        border-left-color: gray;
-        box-shadow: 10px 5px 5px gray;
+        box-shadow: 0 2px 10px 5px gray;
         border-width: .009rem;
         border-radius: 6px;
-        margin: 2%;
+        margin: 3% 0;
         padding: 2% 0;
+        
     }
 
     .prodinfo{
@@ -747,7 +745,7 @@ a {
 
     .addtocartimg{
         display: inline-block;
-        margin-left: 33%;
+        margin-left: 30%;
         margin-top: -2%;
         height: 40px;   
         width: 40px;
@@ -793,11 +791,40 @@ a {
         background-image: url('/img/runningman.webp');
         background-size: cover;
     }
+
+    .weathertext{
+        font-size: 2rem;
+    }
+
+    .weatherstack{
+        font-size: 2rem;
+    }
+
+    .footertext{
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
 
+    .logo{
+        margin-left: 5%;
+    }
+
+    .mainproduct{
+        padding-left: 12%;
+    }
+
+    .searchresults{
+        display: none;
+    }
 
 }
 
-}
+@media only screen and (min-width: 1200px) {
+
+    .logo{
+        margin-left: 9%;
+    }
+
+}}
