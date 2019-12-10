@@ -467,6 +467,13 @@ a {
     color: white;
 }
 
+.backad{
+    background-image: url('/img/weather.webp');
+    background-size: cover;
+    opacity: .8;
+    background-position: bottom -150px right 1px;
+}
+
 /* Media queries start here */
 
 @media only screen and (min-width: 400px) {
@@ -568,6 +575,9 @@ a {
         text-align: center;
     }
 
+    .backad{
+        background-position: bottom -210px right 1px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -575,6 +585,10 @@ a {
     .mainmenu {
         top: 130px;
       }   
+
+    .backad{
+        background-position: bottom -230px right 1px;
+    }
 
 @media only screen and (min-width: 700px) {
 
@@ -676,7 +690,9 @@ a {
         transform: scale(2); 
     }
 
-    
+    .backad{
+        background-position: bottom -280px right 1px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -734,8 +750,11 @@ a {
         margin-top: 5%;
     }
 
-}
+    .backad{
+        background-position: bottom -320px right 1px;
+    }
 
+}
 
 @media only screen and (min-width: 900px) {
 
@@ -788,8 +807,7 @@ a {
     }
 
     .backad{
-        background-image: url('/img/runningman.webp');
-        background-size: cover;
+        background-position: bottom -330px right 1px;
     }
 
     .weathertext{
@@ -832,6 +850,10 @@ a {
         display: none;
     }
 
+    .backad{
+        background-position: bottom -360px right 1px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -854,6 +876,10 @@ a {
         width: 37%;
     }
 
+    .backad{
+        background-position: bottom -440px right 1px;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
@@ -863,7 +889,12 @@ a {
     }   
 
     .timadthree{
-        background-color: blue;
+        background-color: whitesmoke;
+        padding-bottom: 2%;
+    }
+
+    .backad{
+        background-position: bottom -570px right 1px;
     }
 
 }
@@ -881,6 +912,10 @@ a {
     .mainmenu {
         top: 130px;
       }   
+
+    .backad{
+        background-position: bottom -770px right 1px;
+    }
 
 }
 
