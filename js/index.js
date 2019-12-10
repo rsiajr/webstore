@@ -17,8 +17,6 @@ const settings = {
 
 /* Array of products */
 
-
-
 const allProducts = [
     { // 0
       id: 1,
@@ -41,11 +39,11 @@ const allProducts = [
       color: `black`,
       size: `7`,
       release: 1,
-      discount: 360,
+      discount: 60,
       quantity: 0,
       category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 249
+      price: 49
     },{  // 2
       id: 3,
       img: `blueshoes.jpg`,
@@ -93,11 +91,11 @@ const allProducts = [
       color: `green`,
       size: `11`,
       release: 1,
-      discount: 300,
+      discount: 90,
       quantity: 9,
       category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 189
+      price: 79
     },{  // 6
       id: 7,
       img: `pinkshoes.jpg`,
@@ -119,11 +117,11 @@ const allProducts = [
       color: `pink`,
       size: `7`,
       release: 1,
-      discount: 310,
+      discount: 80,
       quantity: 5,
       category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 199
+      price: 69
     },{  // 8
       id: 9,
       img: `redshoes.jpg`,
@@ -132,16 +130,16 @@ const allProducts = [
       color: `red`,
       size: `8`,
       release: 4,
-      discount: 110,
+      discount: 70,
       quantity: 0,
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 99
+      price: 59
     },{  // 9
       id: 10,
       img: `redshoes2.jpg`,
       title: `King Red 2.0`,
-      desc: `King Retro 2.0 - for the kid in you.`,
+      desc: `King Retro 2.0 - for the kid in you. It's the chosen one!`,
       color: `red`,
       size: `9`,
       release: 3,
@@ -154,7 +152,7 @@ const allProducts = [
       id: 11,
       img: `redshoes3.jpg`,
       title: `King Red 3.0`,
-      desc: `King Retro 3.0 - sporty and cool.`,
+      desc: `King Retro 3.0 - sporty and cool. Buy one each for the whole gang!`,
       color: `red`,
       size: `10`,
       release: 2,
@@ -167,7 +165,7 @@ const allProducts = [
       id: 12,
       img: `redshoes4.jpg`,
       title: `King Red 4.0`,
-      desc: `King Retro 4.0 - vintage and elegant.`,
+      desc: `King Retro 4.0 - vintage and elegant... Amazing!`,
       color: `red`,
       size: `11`,
       release: 1,
@@ -180,7 +178,7 @@ const allProducts = [
       id: 13,
       img: `whiteshoes.jpg`,
       title: `King White 1.0`,
-      desc: `Classic King White Air Force One.`,
+      desc: `Classic King White Air Force One. It's meant to be!`,
       color: `white`,
       size: `6`,
       release: 2,
@@ -249,11 +247,11 @@ const allProducts = [
       color: `white`,
       size: `11`,
       release: 1,
-      discount: 100,
+      discount: 80,
       quantity: 3,
       category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 89
+      price: 70
     },{  // 18
       id: 19,
       img: `yellowshoes.jpg`,
@@ -262,11 +260,11 @@ const allProducts = [
       color: `yellow`,
       size: `6`,
       release: 2,
-      discount: 110,
+      discount: 70,
       quantity: 4,
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 99
+      price: 59
     },{  // 19
       id: 20,
       img: `yellowshoes2.jpg`,
@@ -275,11 +273,11 @@ const allProducts = [
       color: `yellow`,
       size: `7`,
       release: 1,
-      discount: 110,
+      discount: 80,
       quantity: 5,
       category: 'running',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
-      price: 99
+      price: 75
     }
 ];
 
@@ -295,7 +293,7 @@ const getProductsAsHtmlString = (product) => {
   if (product.quantity <= 0) {
     stockStatus = `<small class="callout">Sold out</small>`;
     soldOutLabel = `soldout`;
-    purchase = ``;
+    purchase = `<button type="button" class="cantpurchaseme">Out</button>`;
   } else if (product.quantity < settings.productsRemaining) {
     stockStatus = `<small class="callout limitedstock">Limited stocks!</small>`;
   }
@@ -305,7 +303,7 @@ const getProductsAsHtmlString = (product) => {
     <article class="product ${soldOutLabel}">
       <div>
         <header>
-          <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass"></a>
+          <a href="#"><img src="${settings.imagePath + product.img}" alt="${product.title}" class="imgclass zoom"></a>
         </header>
         <h3 class="prodtitle">${product.title}</h3>
         <div class="prodinfo">

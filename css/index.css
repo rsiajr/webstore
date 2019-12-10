@@ -254,7 +254,21 @@ a {
     padding: 2% 0;
 }
 
+.cantpurchaseme{
+    display: inline-block;
+    background-color: black;
+    padding: 3% 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
+
 .imgclass{
+    max-width: auto;
+    max-height: auto;
     border-style: solid;
     border-width: medium;
     border-color: rgb(31, 58, 109);
@@ -370,6 +384,7 @@ a {
     font-size: 1.5rem;
     color: white;
     border-radius: 10px;
+    border-width: 5px;
     margin-left: 30%;
     margin-bottom: 1%;
 }
@@ -470,7 +485,10 @@ a {
         margin-left: auto;
         margin-right: auto;
         border-radius: 7px;
-        width: 70%;
+        border-style: ridge;
+        border-width: thick;
+        border-color: brown;
+        width: 30%;
     }
 
     .kingad{
@@ -551,18 +569,27 @@ a {
         top: 130px;
       }
 
+    
+
 @media only screen and (min-width: 700px) {
 
     .top{
         width: 100%;
     }
  
+    .logo{
+        max-width: 20%;
+        max-height: 90px;
+        margin-left: 2%;
+    }
+
     .signin{
         max-height: 50px;
+        margin-left: 30%;
     }
 
     .mainmenu {
-        top: 155px;
+        top: 100px;
       }
 
     .menu-button{
@@ -593,8 +620,8 @@ a {
     }
 
     .imgclass{
-        max-height: 60%;
-        max-width: 50%;
+        max-height: 500px;
+        max-width: 400px;
     }
 
     .searchresults{
@@ -623,59 +650,78 @@ a {
     }
 
     .purchaseme{
-        margin-top: 12%;
+        margin-top: 5%;
         margin-bottom: 5%;
     }
+    
+    /* Product zoom */
+
+    .zoom {
+        background-color: black;
+        transition: transform .2s; 
+        margin: 0 auto;
+    }
+    
+    .zoom:hover {
+        transform: scale(2); 
+    }
+
     
 }
 
 @media only screen and (min-width: 800px) {
 
-    .mainmenu {
-        top: 175px;
-      }
+    .signin{
+        margin-left: 37%;
+    }
 
     .finalcut{
         display: inline-block;
-        grid-template-columns: 1fr;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .proddesc{
         margin: 0 20%;
     }
 
+    .quant{
+        margin: 1% 0 1% 25%;
+    }
+
     .product{
         display: inline-block;
+        background-color: salmon;
         border-style: solid;
-        border-top-color: whitesmoke;
-        border-bottom-color: whitesmoke;
+        border-top-color: gray;
+        border-left-color: gray;
+        box-shadow: 10px 5px 5px gray;
         border-width: .009rem;
+        border-radius: 6px;
+        margin: 2%;
         padding: 2% 0;
     }
 
-    /* .prodinfo{
+    .prodinfo{
         display: block;
         margin: 0 -10%;
         padding: 1% 0;
         width: 100%;
-    } */
+    }
 
+    .nowshowing{
+        font-size: 1.2rem;
+    }
 }
 
 
 @media only screen and (min-width: 900px) {
 
-    .mainmenu {
-        top: 195px;
-      }
 
 }
 
 @media only screen and (min-width: 1000px) {
 
-    .mainmenu {
-        top: 225px;
-      }
 
 }
 
