@@ -4,7 +4,7 @@ document.getElementById('drop').addEventListener('click', event => {
   document.getElementById('menu').classList.toggle('open');
 });
 
-/*-------------------------------------------------------------------------------*/
+
 
 /* Settings */
 
@@ -13,7 +13,7 @@ const settings = {
   imagePath: 'img/'
 }
 
-/*-------------------------------------------------------------------------------*/
+
 
 /* Array of products */
 
@@ -35,7 +35,7 @@ const allProducts = [
       id: 2,
       img: `blackshoes2.jpg`,
       title: `King Black 2.0`,
-      desc: `Breezy shoes for that hip and flashy vibe.`,
+      desc: `Breezy shoes - hip and flashy.`,
       color: `black`,
       size: `7`,
       release: 1,
@@ -74,7 +74,7 @@ const allProducts = [
       id: 5,
       img: `greenshoes.jpg`,
       title: `King Green 1.0`,
-      desc: `It's time to get your groove on with King Green 1.0.`,
+      desc: `Get your groove on with King Green 1.0.`,
       color: `green`,
       size: `10`,
       release: 2,
@@ -87,7 +87,7 @@ const allProducts = [
       id: 6,
       img: `greenshoes2.jpg`,
       title: `King Green 2.0`,
-      desc: `Get that army gear on, King Green 2.0 is here!`,
+      desc: `Army gear with King Green 2.0 is here!`,
       color: `green`,
       size: `11`,
       release: 1,
@@ -100,7 +100,7 @@ const allProducts = [
       id: 7,
       img: `pinkshoes.jpg`,
       title: `King Pink 1.0`,
-      desc: `King Pink 1.0 - sporty and casual rolled into one.`,
+      desc: `King Pink 1.0 - sporty & casual.`,
       color: `pink`,
       size: `6`,
       release: 2,
@@ -113,7 +113,7 @@ const allProducts = [
       id: 8,
       img: `pinkshoes2.jpg`,
       title: `King Pink 2.0`,
-      desc: `Walk or walkathon, King Pink 2.0 will give you what you need.`,
+      desc: `Walk or walkathon, King Pink 2.0 is key.`,
       color: `pink`,
       size: `7`,
       release: 1,
@@ -139,7 +139,7 @@ const allProducts = [
       id: 10,
       img: `redshoes2.jpg`,
       title: `King Red 2.0`,
-      desc: `King Retro 2.0 - for the kid in you. It's the chosen one!`,
+      desc: `King Retro 2.0 - It's the chosen one!`,
       color: `red`,
       size: `9`,
       release: 3,
@@ -152,7 +152,7 @@ const allProducts = [
       id: 11,
       img: `redshoes3.jpg`,
       title: `King Red 3.0`,
-      desc: `King Retro 3.0 - sporty and cool. Buy one each for the whole gang!`,
+      desc: `King Retro 3.0 - sporty and cool!`,
       color: `red`,
       size: `10`,
       release: 2,
@@ -165,7 +165,7 @@ const allProducts = [
       id: 12,
       img: `redshoes4.jpg`,
       title: `King Red 4.0`,
-      desc: `King Retro 4.0 - vintage and elegant... Amazing!`,
+      desc: `King Retro 4.0 - vintage and elegant!`,
       color: `red`,
       size: `11`,
       release: 1,
@@ -178,7 +178,7 @@ const allProducts = [
       id: 13,
       img: `whiteshoes.jpg`,
       title: `King White 1.0`,
-      desc: `Classic King White Air Force One. It's meant to be!`,
+      desc: `Classic King White Air Force One.`,
       color: `white`,
       size: `6`,
       release: 2,
@@ -204,7 +204,7 @@ const allProducts = [
       id: 15,
       img: `whiteshoes3.jpg`,
       title: `King White 3.0`,
-      desc: `Running shoes with air soles - perfect for short and long runs.`,
+      desc: `Running shoes with air soles.`,
       color: `white`,
       size: `8`,
       release: 4,
@@ -243,7 +243,7 @@ const allProducts = [
       id: 18,
       img: `whiteshoes6.jpg`,
       title: `King White 6.0`,
-      desc: `Sleek white water-resitant running shoes perfect for the outdoorsy people.`,
+      desc: `Sleek white water-resitant running shoes.`,
       color: `white`,
       size: `11`,
       release: 1,
@@ -256,7 +256,7 @@ const allProducts = [
       id: 19,
       img: `yellowshoes.jpg`,
       title: `King Yellow 1.0`,
-      desc: `Retro yellow King Yellow Air Max: Live for the thrill!`,
+      desc: `Retro yellow King Yellow Air Max!`,
       color: `yellow`,
       size: `6`,
       release: 2,
@@ -269,7 +269,7 @@ const allProducts = [
       id: 20,
       img: `yellowshoes2.jpg`,
       title: `King Yellow 2.0`,
-      desc: `Yellow suede shoes perfect for social gatherings and every day use.`,
+      desc: `Yellow suede shoes.`,
       color: `yellow`,
       size: `7`,
       release: 1,
@@ -281,7 +281,7 @@ const allProducts = [
     }
 ];
 
-/*-------------------------------------------------------------------------------*/
+
 
 /* Array to HTML */
 
@@ -354,7 +354,7 @@ const allP = allProducts.map(getProductsAsHtmlString).join(`\n`);
 
 document.getElementById(`products`).innerHTML = allP;
 
-/*-------------------------------------------------------------------------------*/
+
 
 /* Sort products */
 
@@ -416,7 +416,7 @@ const sortProducts = () => {
 
 sort.addEventListener("input",sortProducts);
 
-/*-------------------------------------------------------------------------------*/
+
 
 /*Filter function*/
 
@@ -454,7 +454,7 @@ const prodAllFilter= () => {
 FilterC.addEventListener("input",prodAllFilter);
 FilterS.addEventListener("input",prodAllFilter);
 
-/*-------------------------------------------------------------------------------*/
+
 
 /* Search function */
 
@@ -475,7 +475,7 @@ prodtitle.addEventListener('input', event => {
 
 })
 
-/*-------------------------------------------------------------------------------*/
+
 
 /* Add to cart function */
 
@@ -492,7 +492,7 @@ function plusCart () {
 
 buttonCart.addEventListener("click",plusCart);
 
-/*-------------------------------------------------------------------------------*/
+
 
 /*Weather API*/
 
