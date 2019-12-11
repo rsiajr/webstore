@@ -890,16 +890,23 @@ border: 2px solid #222;
     }
 
     .timadthree{
-        background-color: #617073;
+        background-image: url('/img/coffeebeans.jpeg');
+        background-position: top;
         padding-bottom: 2%;
     }
 
     .timadfour{
-        background-color: #829191;
+        background-image: url('/img/spiral.jpeg');
+        background-position: bottom;
         padding-bottom: 2%;
     }
 
-    .adcss{
+    .adcssone{
+        background-color: #b09c94;
+        border-color: lightgray;
+    }
+
+    .adcsstwo{
         background-color: cornflowerblue;
         border-color: lightgray;
     }
