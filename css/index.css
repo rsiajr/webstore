@@ -1038,6 +1038,10 @@ border: 2px solid #222;
 
 /* This portion changes the layout of the header section */
 
+    a{
+        color: goldenrod;
+    }
+
     .logo{
         display: none;
     }
