@@ -462,7 +462,7 @@ border: 2px solid #222;
 }
 
 .backad{
-    background-image: url('/img/weather.webp');
+    background-image: url('/img/weather.gif');
     background-size: cover;
     opacity: .8;
     background-position: bottom -150px right 1px;
