@@ -14,6 +14,7 @@ www.amazon.com
 www.kijiji.com
 www.giphy.com
 www.weatherstack.com
+www.fontawesome.com
 
 
 Media-queries

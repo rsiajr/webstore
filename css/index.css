@@ -149,7 +149,7 @@
 /* CSS for Body and Hyperlink*/
 
 body{
-    background-color: snow;
+    background-color: lightgray;
 }
 
 a {
@@ -482,6 +482,24 @@ border: 2px solid #222;
     color: white;
 }
 
+.help{
+	position:fixed;
+	width:100px;
+	height:100px;
+	bottom:40px;
+	right:40px;
+	background-color: tomato;
+    color:#FFF;
+    font-size: 3.7rem;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px gray;
+}
+
+.helpbutton{
+    color: whitesmoke;
+	margin-top:22px;
+}
 
 /* Media queries start here */
 
@@ -891,12 +909,14 @@ border: 2px solid #222;
 
     .timadthree{
         background-image: url('/img/coffeebeans.jpeg');
+        background-size: cover;
         background-position: top;
         padding-bottom: 2%;
     }
 
     .timadfour{
         background-image: url('/img/spiral.jpeg');
+        background-size: cover;
         background-position: bottom;
         padding-bottom: 2%;
     }
@@ -907,7 +927,7 @@ border: 2px solid #222;
     }
 
     .adcsstwo{
-        background-color: cornflowerblue;
+        background-color: teal;
         border-color: lightgray;
     }
 
@@ -926,6 +946,14 @@ border: 2px solid #222;
     .mainmenu {
         top: 123px;
     }   
+
+    .finalcut{
+        margin-left: .5%;
+    }
+
+    *{
+        margin-left: -5%;
+    }
 
     .backad{
         background-position: bottom -570px right 1px;
@@ -950,6 +978,10 @@ border: 2px solid #222;
     .logo{
         max-height: 180px;
         margin-left: 13%;
+    }
+
+    .finalcut{
+        margin-left: 1%;
     }
 
     .addtocartimg{
