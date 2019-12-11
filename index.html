@@ -22,12 +22,15 @@
         <button type="button" class="menu-button" id="drop">
         <span class="material-icons">menu</span>
         </button>
-        <a href="index.html"><img src="img/company logo.jpg" alt="HTML Logo (replace this)" class="logo"></a>
-        <a href="#" title="Sign in or Create an account"><img src="img/log-in.png" alt="Button to sign in or create an account" class="signin"></a>
-        <!-- Once a larger viewport is reached via Media Query, the sign in button is replaced by the cart logo -->
-        <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
-        <!-- This cartnum is linked to JS and will keep adding "1" if a user clicks on the "Add to cart" button for each product. It's broken though because only the first product's button works and the succeeding ones don't, which is weird because all products use the same ID. Don't know how to fix it so I left it as is. -->
-        <p class="carttext"><span id="cartnum" class="cartnum">0</span> items in cart</p>
+        <div>
+          <h1 class="newtitle">King eCom</h1>
+          <a href="index.html"><img src="img/company logo.jpg" alt="HTML Logo (replace this)" class="logo"></a>
+          <a href="#" title="Sign in or Create an account"><img src="img/log-in.png" alt="Button to sign in or create an account" class="signin"></a>
+          <!-- Once a larger viewport is reached via Media Query, the sign in button is replaced by the cart logo -->
+          <a href="#" title="addtocartimg"><img src="img/shopping-cart.png" alt="Add to cart button" id="addcart" class="addtocartimg"></a>
+          <!-- This cartnum is linked to JS and will keep adding "1" if a user clicks on the "Add to cart" button for each product. It's broken though because only the first product's button works and the succeeding ones don't, which is weird because all products use the same ID. Don't know how to fix it so I left it as is. -->
+          <p class="carttext"><span id="cartnum" class="cartnum">0</span> items in cart</p>
+        </div>
       </section>
       <!-- This is the popup menu list -->
       <nav aria-label="Primary" class="navigation" id="dropit" class="navclass">
@@ -63,29 +66,31 @@
         </section>
         <!-- These are the filter features area -->
         <h2 class="filtercss">Filters</h2>
-        <fieldset>
-          <div class="filtergrid">
-            <legend class="filtertitlecolour">Color</legend>
-              <select id="shoecolor" class="filterdropdown">
-                <option value="None"> </option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="green">Green</option>
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="red">Red</option>
-              </select>
+        <div class="colorcategory">
+          <fieldset>
+            <div class="filtergrid">
+              <legend class="filtertitlecolour">Color</legend>
+                <select id="shoecolor" class="filterdropdown">
+                  <option value="None"> </option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="green">Green</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="red">Red</option>
+                </select>
           </div>
-        </fieldset>
-        <fieldset>
-          <div class="filtergrid">
-            <legend class="filtertitlesize">Category</legend>
-              <select id="shoecategory" class="shoesize filterdropdown">
-                <option value="None"> </option>
-                <option value="running">Running</option>
-                <option value="walking">Walking</option>
-              </select>
-          </div>
+          </fieldset>
+          <fieldset>
+            <div class="filtergrid">
+              <legend class="filtertitlesize">Category</legend>
+                <select id="shoecategory" class="shoesize filterdropdown">
+                  <option value="None"> </option>
+                  <option value="running">Running</option>
+                  <option value="walking">Walking</option>
+                </select>
+            </div>
+        </div>
         </fieldset>
       </header>
       <section>
@@ -98,7 +103,7 @@
       <!-- I added gif ads (one from Tim Hortons, which I got from the internet, and the other is a gif that I created from Milo's class) -->
       <article class="adgrid">
         <div class="timadthree">
-          <h1 class="adcss adcssone"> This website and its designer were powered by: </h1>
+          <h1 class="adcss adcssone"> This website (and its designer) was powered by: </h1>
           <img src="img/timsad.webp" alt="Tim Horton's ad" class="timad">
         </div>
         <div class="timadfour">
@@ -111,7 +116,7 @@
         <h1 class="adcss"> Be weather-ready and wear the right shoes! Check the weather here:</h1>
         <div class="weatherstack backad">
           <form>
-            <select id="city">
+            <select id="city" class="city">
               <option value="">Please select a location
               </option>
               <option value="Calgary">Calgary</option>

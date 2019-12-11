@@ -35,6 +35,10 @@
     margin: 0 3%;
 }
 
+.newtitle{
+    display: none;
+}
+
 .mainmenu-toggle {
     display: block;
     margin: 1em 0;
@@ -150,6 +154,8 @@
 
 body{
     background-color: lightgray;
+    background-image: url('/img/backdrop.jpeg');
+    background-size: cover;
 }
 
 a {
@@ -168,7 +174,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 1% 15%;
+    padding: 1% 0;
     margin: 1% 0;
 }
 
@@ -540,6 +546,10 @@ border: 2px solid #222;
         width: 70%;
     }
 
+    .subhead{
+        padding: 1% 5%;
+    }
+
 }
 
 @media only screen and (min-width: 500px) {
@@ -605,6 +615,10 @@ border: 2px solid #222;
 
     .backad{
         background-position: bottom -210px right 1px;
+    }
+
+    .city{
+        color: steelblue;
     }
 }
 
@@ -976,7 +990,7 @@ border: 2px solid #222;
     }
 
     .mainproduct{
-        margin-right: 2%;
+        margin-left: 5%;
     }
 
     .menu-button{
@@ -990,19 +1004,60 @@ border: 2px solid #222;
     .nowshowing{
         font-size: 2rem;
     }
-
-    .addtocartimg{
-        margin-right: 12px;
-        margin-top: -24px;
-    }
     
-    .filterdropdown{
-        margin-left: -28%;
-    }
-
     .marg-top{
         margin-top: 9%;
     }
+
+    .subhead{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .colorcategory{
+        display: block;
+        margin: 0 17%;
+    }
+
+    .filterdropdown{
+        width: 200px;
+        margin: 0 2%;
+    }
+
+    .subhead{
+        padding: 1%;
+    }
+
+/* This portion changes the layout of the header section */
+
+    .logo{
+        display: none;
+    }
+
+    .newtitle{
+        display: inline-block;
+        color: goldenrod;
+        font-size: 2.5rem;
+        margin-left: -89%;
+    }
+    
+    .menu-button{
+        margin-left: 2%;
+        padding-left: 1.5%;
+    }
+
+    .addtocartimg{
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
 }
 
 @media only screen and (min-width: 1920px) {
@@ -1018,10 +1073,6 @@ border: 2px solid #222;
 
     .finalcut{
         margin-left: 1%;
-    }
-
-    .addtocartimg{
-        margin-left: 30%;
     }
 
     .mainmenu {
@@ -1040,12 +1091,12 @@ border: 2px solid #222;
         font-size: 2rem;
     }
 
-    .filterdropdown{
-        margin-left: -38%;
+    .marg-top{
+        margin-top: 8%;
     }
 
-    .marg-top{
-        margin-top: 12%;
+    .colorcategory{
+        margin: 0 28%;
     }
 
 }
