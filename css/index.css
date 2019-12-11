@@ -390,7 +390,7 @@ border: 2px solid #222;
 
 .cantpurchaseme{
     display: inline-block;
-    background-color: black;
+    background-color: gray;
     padding: 3% 15%;
     font-size: 1.5rem;
     color: white;
@@ -546,6 +546,7 @@ border: 2px solid #222;
     .menu-button{
         height: 50px;
         width: 40px;
+        padding-left: 1%;
         text-align: left;
     }
 
@@ -640,7 +641,7 @@ border: 2px solid #222;
 
     .menu-button{
         margin-left: 5%;
-        padding-left: .3%;
+        padding-left: 1%;
     }
 
     .centerme{
@@ -861,6 +862,15 @@ border: 2px solid #222;
         font-size: 1.5rem;
     }
 
+    .marg-top{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .filterdropdown{
+        margin-left: 0%;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -869,8 +879,17 @@ border: 2px solid #222;
         margin-left: 5%;
     }
 
+    .menu-button{
+        margin-left: 5%;
+        padding-left: .7%;
+    }
+
+    .filterdropdown{
+        margin-left: -2%;
+    }
+
     .mainproduct{
-        padding-left: 12%;
+        padding: 0 10%;
     }
 
     .searchresults{
@@ -879,6 +898,11 @@ border: 2px solid #222;
 
     .backad{
         background-position: bottom -360px right 1px;
+    }
+
+    .marg-top{
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
 }
@@ -951,8 +975,12 @@ border: 2px solid #222;
         margin-left: .5%;
     }
 
-    *{
-        margin-left: -5%;
+    .mainproduct{
+        margin-right: 2%;
+    }
+
+    .menu-button{
+        padding-left: .5%;
     }
 
     .backad{
@@ -971,6 +999,10 @@ border: 2px solid #222;
     .filterdropdown{
         margin-left: -28%;
     }
+
+    .marg-top{
+        margin-top: 9%;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -978,6 +1010,10 @@ border: 2px solid #222;
     .logo{
         max-height: 180px;
         margin-left: 13%;
+    }
+
+    .menu-button{
+        padding-left: .4%;
     }
 
     .finalcut{
@@ -1006,6 +1042,10 @@ border: 2px solid #222;
 
     .filterdropdown{
         margin-left: -38%;
+    }
+
+    .marg-top{
+        margin-top: 12%;
     }
 
 }
