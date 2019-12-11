@@ -620,6 +620,7 @@ border: 2px solid #222;
     .city{
         color: steelblue;
     }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -935,6 +936,7 @@ border: 2px solid #222;
 
     .adcss{
         margin: 2%;
+        font-size: 3rem;
     }
 
     .timad{
@@ -977,12 +979,16 @@ border: 2px solid #222;
         margin-left: -6%;
     }
 
+    .city{
+        font-size: 3rem;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
 
     .mainmenu {
-        top: 123px;
+        top: 100px;
     }   
 
     .finalcut{
@@ -1006,7 +1012,7 @@ border: 2px solid #222;
     }
     
     .marg-top{
-        margin-top: 9%;
+        margin-top: 12%;
     }
 
     .subhead{
@@ -1037,25 +1043,19 @@ border: 2px solid #222;
     .newtitle{
         display: inline-block;
         color: goldenrod;
-        font-size: 2.5rem;
-        margin-left: -89%;
+        font-size: 3.5rem;
+        margin-left: 10%;
     }
     
     .menu-button{
         margin-left: 2%;
-        padding-left: 1.5%;
+        padding-left: .5%;
     }
 
     .addtocartimg{
-        margin-right: 0;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-    .top{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        margin-right: .7%;
+        margin-top: -1.5%;
+        margin-left: 17%;
     }
 
 }
@@ -1076,8 +1076,12 @@ border: 2px solid #222;
     }
 
     .mainmenu {
-        top: 220px;
+        top: 110px;
     }   
+
+    .addtocartimg{
+        margin-left: 29%;
+    }
 
     .backad{
         background-position: bottom -900px right 1px;
@@ -1085,10 +1089,6 @@ border: 2px solid #222;
 
     .weathertext{
         font-size: 3rem;
-    }
-
-    .adcss{
-        font-size: 2rem;
     }
 
     .marg-top{
