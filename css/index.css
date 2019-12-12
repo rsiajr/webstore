@@ -556,8 +556,11 @@ border: 2px solid #222;
     transition: transform 0.3s;
 }
     .helpmenu li {
-        display:table-row;
+        margin: 0 auto;
         line-height: 1.5;
+        min-width: 696px;
+        list-style: none;
+        padding-top: 20px;
     }
     .helpmenu a {
         color: var(--col-fg);
@@ -583,7 +586,7 @@ border: 2px solid #222;
 }
 
 .question{
-    padding: 5% 10%;
+    padding: 2% 10%;
 }
 
 /* ------------------------Media queries begin here-------------------------- */
