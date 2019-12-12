@@ -26,7 +26,7 @@
     display: none;
     background-color: whitesmoke;
     color: dodgerblue;
-    border-color: salmon;
+    border-color: goldenrod;
     border-style: ridge;
     font-weight: bolder;
     font-size: 1rem;
@@ -509,7 +509,7 @@ border: 2px solid #222;
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color: tomato;
+	background-color: goldenrod;
     color:#FFF;
     font-size: 2rem;
 	border-radius:50px;
@@ -538,7 +538,9 @@ border: 2px solid #222;
     list-style: none;
     }
 
-
+.hideshow{
+    display: none;
+}
 
 /* ------------------------Media queries begin here-------------------------- */
 
@@ -1219,8 +1221,12 @@ border: 2px solid #222;
         margin: 0 28%;
     }
 
+    .hideshow{
+        display: block;
+    }
+
     .helpmenu {
-        background-color: salmon;
+        background-color: goldenrod;
         color: black;
         padding: 1em;
         margin: 0;
@@ -1229,7 +1235,7 @@ border: 2px solid #222;
         border-width: thick;
         border-color: white;
         color: white;
-        top: 500px;
+        top: 700px;
         left: 0;
         width: 50%;
         height: 100%;
@@ -1247,6 +1253,7 @@ border: 2px solid #222;
             color: var(--col-fg);
             text-decoration: none;
         }
+
     .helpmenu.open { 
         transform: translateX(0em);
     }
@@ -1262,12 +1269,13 @@ border: 2px solid #222;
     }
     
     .field{
-        padding: 1.2% 0;
+        display: block;
+        padding: .5% 0;
         margin: 1% 0;
     }
     
     .question{
-        padding: 2% 10%;
+        padding: 1% 10%;
     }
 
 }
