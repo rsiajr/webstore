@@ -522,7 +522,57 @@ border: 2px solid #222;
 	margin-top:15px;
 }
 
-/* Media queries start here */
+/* Help button toggle */
+
+.helpmenu-toggle {
+    display: block;
+    margin: 1em 0;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.navigationtwo {
+    margin: 1em 0;
+}
+    .navigationtwo ul {
+    list-style: none;
+    }
+
+.helpmenu {
+    background-color: steelblue;
+    color: black;
+    padding: 1em;
+    margin: 0;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 10em;
+    height: 100%;
+    transform: translateX(-10em);
+    transition: transform 0.3s;
+}
+    .helpmenu li {
+    line-height: 1.5;
+    }
+    .helpmenu a {
+        color: var(--col-fg);
+        text-decoration: none;
+    }
+.helpmenu.open { 
+    transform: translateX(0em);
+}
+
+.helplist:hover {
+    background-color: slategray;
+    color: white;
+}
+
+.helplist:focus {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* ------------------------Media queries begin here-------------------------- */
 
 @media only screen and (min-width: 400px) {
 
@@ -1097,7 +1147,7 @@ border: 2px solid #222;
     
     .divtopmenu{
         display: inline;
-        margin-left: 11%;
+        margin-left: 10%;
     }
     
     .ultopmenu{

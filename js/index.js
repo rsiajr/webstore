@@ -27,7 +27,7 @@ const allProducts = [
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 39
-      
+
     },{  // 1
       id: 2,
       img: `blackshoes2.jpg`,
@@ -553,4 +553,15 @@ dropDownList.addEventListener("change",function(){
       })
   })
 })
+
+
+/* Function: Help Support Button
+Return: popout of the help support function
+Description: This will slide out a form for the user to fill out when the help support button is clicked
+*/
+
+
+document.getElementById('dropittwo').addEventListener('click', event => {
+  document.getElementById('helpmenu').classList.toggle('open');
+});
 
