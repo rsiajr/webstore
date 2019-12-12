@@ -57,19 +57,30 @@
         </ul>
       </nav>
       <!-- This is the popup help menu list (still trying to fix it) -->
-      <nav aria-label="Secondary" class="navigationtwo" id="dropittwo" class="navclasstwo">
+      <nav aria-label="Secondary" class="navigationtwo" id="droptwo" class="navclasstwo">
+        <form>
           <ul class="helpmenu" id="helpmenu">
-            <li><a href="#" class="helplist">Home</a>
-            <li><a href="#" class="helplist">My Account</a></li>
-            <li><a href="#" class="helplist">My Transactions</a></li>
-            <li><a href="#" class="helplist">Search History</a></li>
-            <li><a href="#" class="helplist">My Reviews</a></li>
-            <li><a href="#" class="helplist">Shop by Category</a></li>
-            <li><a href="#" class="helplist">Today's Deals</a></li>
-            <li><a href="#" class="helplist">Contact Us</a></li>
-            <li><a href="#" class="helplist">About</a></li>
+            <li>
+              <label>Name: </label>
+              <input type="text" id="empname" class="field" maxlength="60">
+            </li>
+            <li>
+                <label>Email: </label>
+                <input type="text" id="email" class="field" maxlength="30">
+            </li>
+            <li>
+                <label>Mobile: </label>
+                <input type="text" id="empnumber" class="field" maxlength="1000">
+            </li>
+            <li>
+                <label>Question/Concern: </label>
+                <input type="text" id="empnumber" class="field question" maxlength="1000">
+            </li>
+            <input type="button" id="submit" value="Submit" class="calc">
+            <input type="button" id="cancel" value="Cancel" class="cancelme">
           </ul>
-        </nav>
+        </form>
+    </nav>
     </header>
     <main>
       <header>

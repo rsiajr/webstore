@@ -555,10 +555,7 @@ dropDownList.addEventListener("change",function(){
 })
 
 
-/* Function: Help Support Button
-Return: popout of the help support function
-Description: This will slide out a form for the user to fill out when the help support button is clicked
-*/
+/* Description: For the popup help menu */ 
 
 
 document.getElementById('dropittwo').addEventListener('click', event => {

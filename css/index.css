@@ -433,7 +433,7 @@ border: 2px solid #222;
 }
 
 .addtocart{
-    position: relative; 
+    position: static; 
     font-size: .8rem;
     /* padding: 6%; */
     top: -3px;
@@ -539,20 +539,25 @@ border: 2px solid #222;
     }
 
 .helpmenu {
-    background-color: steelblue;
+    background-color: salmon;
     color: black;
     padding: 1em;
     margin: 0;
     position: fixed;
-    top: 70px;
+    border-style: solid;
+    border-width: thick;
+    border-color: white;
+    color: white;
+    top: 500px;
     left: 0;
-    width: 10em;
+    width: 50%;
     height: 100%;
-    transform: translateX(-10em);
+    transform: translateX(-100%);
     transition: transform 0.3s;
 }
     .helpmenu li {
-    line-height: 1.5;
+        display:table-row;
+        line-height: 1.5;
     }
     .helpmenu a {
         color: var(--col-fg);
@@ -570,6 +575,15 @@ border: 2px solid #222;
 .helplist:focus {
     background-color: dodgerblue;
     color: white;
+}
+
+.field{
+    padding: 1.2% 0;
+    margin: 1% 0;
+}
+
+.question{
+    padding: 5% 10%;
 }
 
 /* ------------------------Media queries begin here-------------------------- */
