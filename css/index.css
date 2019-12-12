@@ -1235,11 +1235,11 @@ border: 2px solid #222;
         border-width: thick;
         border-color: white;
         color: white;
-        top: 700px;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        transform: translateX(-100%);
+        top: 540px;
+        right: 0;
+        width: 15%;
+        height: 43%;
+        transform: translateX(100%);
         transition: transform 0.3s;
     }
         .helpmenu li {
