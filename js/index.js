@@ -27,6 +27,7 @@ const allProducts = [
       category: 'walking',
       swatch: { colorway1: `Red`, colorway2: `White`, colorway3: `Blue` },
       price: 39
+      
     },{  // 1
       id: 2,
       img: `blackshoes2.jpg`,

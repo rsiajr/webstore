@@ -962,7 +962,7 @@ border: 2px solid #222;
 
     .adcss{
         margin: 2%;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .timad{
@@ -1080,7 +1080,7 @@ border: 2px solid #222;
 /* This portion changes the layout of the header section */
 
     a{
-        color: rgb(59, 59, 59);
+        color: goldenrod;
     }
 
     .logo{
